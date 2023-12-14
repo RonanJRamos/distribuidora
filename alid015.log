@@ -1,0 +1,31 @@
+Line 127: Class MSComctlLib.Toolbar of control botoes1 was not a loaded control class.
+Line 168: Class MSComctlLib.Toolbar of control botoes was not a loaded control class.
+Line 218: Class MSComctlLib.StatusBar of control BarStatus was not a loaded control class.
+Line 265: Class MSComctlLib.ImageList of control figuras was not a loaded control class.
+Line 133: The property name _ExtentX in botoes1 is invalid.
+Line 134: The property name _ExtentY in botoes1 is invalid.
+Line 135: The property name ButtonWidth in botoes1 is invalid.
+Line 136: The property name ButtonHeight in botoes1 is invalid.
+Line 137: The property name AllowCustomize in botoes1 is invalid.
+Line 138: The property name Style in botoes1 is invalid.
+Line 139: The property name _Version in botoes1 is invalid.
+Line 165: The property name Buttons in botoes1 is invalid.
+Line 174: The property name _ExtentX in botoes is invalid.
+Line 175: The property name _ExtentY in botoes is invalid.
+Line 176: The property name ButtonWidth in botoes is invalid.
+Line 177: The property name ButtonHeight in botoes is invalid.
+Line 178: The property name AllowCustomize in botoes is invalid.
+Line 179: The property name Style in botoes is invalid.
+Line 180: The property name _Version in botoes is invalid.
+Line 214: The property name Buttons in botoes is invalid.
+Line 225: The property name _ExtentX in BarStatus is invalid.
+Line 226: The property name _ExtentY in BarStatus is invalid.
+Line 227: The property name _Version in BarStatus is invalid.
+Line 236: The property name Panels in BarStatus is invalid.
+Line 268: The property name _ExtentX in figuras is invalid.
+Line 269: The property name _ExtentY in figuras is invalid.
+Line 271: The property name ImageWidth in figuras is invalid.
+Line 272: The property name ImageHeight in figuras is invalid.
+Line 273: The property name MaskColor in figuras is invalid.
+Line 274: The property name _Version in figuras is invalid.
+Line 333: The property name Images in figuras is invalid.

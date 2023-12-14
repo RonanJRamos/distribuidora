@@ -1,0 +1,12 @@
+; Field definition file for table: ADORecordset
+Codigo	long
+CodNota	long
+Emissao	datetime		Jan 5, 1994 1:23:45 PM
+NumeroNFCte	string	50	string sample value
+ChaveAcesso	string	50	string sample value
+NumeroNFe	string	50	string sample value
+CNPJ string	50	string sample value
+Nome	string	250	string sample value
+Valor	number		1.00
+Parcelas	number		1.00
+FormaPag	string	100	string sample value

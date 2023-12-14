@@ -1,0 +1,10 @@
+; Field definition file for table: ADORecordset
+Codigo	long		1
+CodProd	long		1
+nome	string	255	string sample value
+Entrada	number		1.00
+Saidas	number		1.00
+Anterior	number		1.00
+CustoMedio	number		1.00
+CustomedioTotal	number		1.00
+saldo	number		1.00

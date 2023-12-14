@@ -1,0 +1,26 @@
+CodUsuario	string	20	string sample value
+NOME	string	50	string sample value
+CODBAR	string	18	string sample value
+Custo	number		1.00
+Preco	number		1.00
+MinimoVenda	number		1.00
+MinimoEst	number		1.00
+UnidMedida	string	20	string sample value
+QtdMedida	number		1.00
+CST	string	3	string sample value
+lucro	number		1.00
+ComissaoFornecedor	number		1.00
+Fornecedor	string	155	string sample value
+codigo	number		1.00
+QuantEstoque	number		1.00
+ipi	number		1.00
+percentualcusto	string	50	string sample value
+maximoEstoque	number		1.00
+custoTotal	number		1.00
+subitens	boolean		TRUE
+multiplositens	boolean		TRUE
+Desativado	Long		
+Santa1	number		1.00
+santa2	number		1.00
+California	number		1.00
+LimiteVenda	number		1.00

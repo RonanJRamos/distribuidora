@@ -1,0 +1,2212 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Decisao.NFE
+</name>
+</assembly>
+<members>
+<member name="T:Decisao.NFE.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:Decisao.NFE.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:Decisao.NFE.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:Decisao.NFE.My.Resources.Resources.Certificado">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Decisao.NFE.TMDFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFe.infMDFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFe.infMDFeSupl">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFe.Signature">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.ide">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.emit">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.infModal">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.infDoc">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.seg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.tot">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.lacres">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.autXML">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.infAdic">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.infRespTec">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.versao">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFe.Id">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIde">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.tpAmb">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.tpEmit">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.tpTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.tpTranspSpecified">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.mod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.serie">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.nMDF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.cMDF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.cDV">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.modal">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.dhEmi">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.tpEmis">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.procEmi">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.verProc">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.UFIni">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.UFFim">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.infMunCarrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.infPercurso">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.dhIniViagem">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.indCanalVerde">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.indCanalVerdeSpecified">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.indCarregaPosterior">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIde.indCarregaPosteriorSpecified">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TCodUfIBGE">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item11">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item12">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item13">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item14">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item15">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item16">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item17">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item21">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item22">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item23">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item24">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item25">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item26">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item27">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item28">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item29">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item31">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item32">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item33">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item35">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item41">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item42">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item43">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item50">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item51">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item52">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TCodUfIBGE.Item53">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TAmb">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TAmb.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TAmb.Item2">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TEmit">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TEmit.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TEmit.Item2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TEmit.Item3">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TTransp">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TTransp.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TTransp.Item2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TTransp.Item3">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TModMD">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TModMD.Item58">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TModalMD">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TModalMD.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TModalMD.Item2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TModalMD.Item3">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TModalMD.Item4">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeTpEmis">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeIdeTpEmis.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeIdeTpEmis.Item2">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeProcEmi">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeIdeProcEmi.Item0">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TUf">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.AC">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.AL">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.AM">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.AP">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.BA">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.CE">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.DF">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.ES">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.GO">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.MA">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.MG">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.MS">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.MT">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.PA">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.PB">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.PE">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.PI">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.PR">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.RJ">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.RN">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.RO">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.RR">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.RS">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.SC">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.SE">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.SP">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.TO">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TUf.EX">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeInfMunCarrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIdeInfMunCarrega.cMunCarrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIdeInfMunCarrega.xMunCarrega">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.X509DataType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.X509DataType.X509Certificate">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.KeyInfoType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.KeyInfoType.X509Data">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.KeyInfoType.Id">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.SignatureValueType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureValueType.Id">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureValueType.Value">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TransformType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TransformType.XPath">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TransformType.Algorithm">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TTransformURI">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TTransformURI.httpwwww3org200009xmldsigenvelopedsignature">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TTransformURI.httpwwww3orgTR2001RECxmlc14n20010315">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.ReferenceType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.Transforms">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.DigestMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.DigestValue">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.Id">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.URI">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceType.Type">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.ReferenceTypeDigestMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.ReferenceTypeDigestMethod.Algorithm">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.SignedInfoType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoType.CanonicalizationMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoType.SignatureMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoType.Reference">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoType.Id">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.SignedInfoTypeCanonicalizationMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoTypeCanonicalizationMethod.Algorithm">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.SignedInfoTypeSignatureMethod">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignedInfoTypeSignatureMethod.Algorithm">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.SignatureType">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureType.SignedInfo">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureType.SignatureValue">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureType.KeyInfo">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.SignatureType.Id">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TRespTec">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.CNPJ">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.xContato">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.email">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.fone">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.idCSRT">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TRespTec.hashCSRT">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidCarga.tpUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidCarga.idUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidCarga.lacUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidCarga.qtdRat">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TtipoUnidCarga">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidCarga.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidCarga.Item2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidCarga.Item3">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidCarga.Item4">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TUnidCargaLacUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidCargaLacUnidCarga.nLacre">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TUnidadeTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTransp.tpUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTransp.idUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTransp.lacUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTransp.infUnidCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTransp.qtdRat">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TtipoUnidTransp">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item3">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item4">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item5">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item6">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TtipoUnidTransp.Item7">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TUnidadeTranspLacUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TUnidadeTranspLacUnidTransp.nLacre">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TEndeEmi">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.xLgr">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.nro">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.xCpl">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.xBairro">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.cMun">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.xMun">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.CEP">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.UF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.fone">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TEndeEmi.email">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeInfPercurso">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeIdeInfPercurso.UFPer">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeIndCanalVerde">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeIdeIndCanalVerde.Item1">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeIdeIndCarregaPosterior">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeIdeIndCarregaPosterior.Item1">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeEmit">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.Item">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.ItemElementName">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.IE">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.xNome">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.xFant">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeEmit.enderEmit">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.ItemChoiceType">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType.CNPJ">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType.CPF">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfModal">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfModal.Any">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfModal.versaoModal">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescarga.cMunDescarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescarga.xMunDescarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescarga.infCTe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescarga.infNFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescarga.infMDFeTransp">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.chCTe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.SegCodBarra">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.indReentrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.indReentregaSpecified">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.infUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.peri">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTe.infEntregaParcial">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTeIndReentrega">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTeIndReentrega.Item1">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.nONU">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.xNomeAE">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.xClaRisco">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.grEmb">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.qTotProd">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTePeri.qVolTipo">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTeInfEntregaParcial">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTeInfEntregaParcial.qtdTotal">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfCTeInfEntregaParcial.qtdParcial">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.chNFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.SegCodBarra">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.indReentrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.indReentregaSpecified">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.infUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFe.peri">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFeIndReentrega">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFeIndReentrega.Item1">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.nONU">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.xNomeAE">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.xClaRisco">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.grEmb">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.qTotProd">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfNFePeri.qVolTipo">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp.chMDFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp.indReentrega">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp.indReentregaSpecified">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp.infUnidTransp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTransp.peri">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspIndReentrega">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspIndReentrega.Item1">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.nONU">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.xNomeAE">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.xClaRisco">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.grEmb">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.qTotProd">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfMunDescargaInfMDFeTranspPeri.qVolTipo">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeSeg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSeg.infResp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSeg.infSeg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSeg.nApol">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSeg.nAver">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeSegInfResp">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSegInfResp.respSeg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSegInfResp.Item">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSegInfResp.ItemElementName">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeSegInfRespRespSeg">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeSegInfRespRespSeg.Item1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeSegInfRespRespSeg.Item2">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.ItemChoiceType1">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType1.CNPJ">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType1.CPF">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeSegInfSeg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSegInfSeg.xSeg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSegInfSeg.CNPJ">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeTot">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.qCTe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.qNFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.qMDFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.vCarga">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.cUnid">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeTot.qCarga">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeTotCUnid">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeTotCUnid.Item01">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.TMDFeInfMDFeTotCUnid.Item02">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeLacres">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeLacres.nLacre">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeAutXML">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeAutXML.Item">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeAutXML.ItemElementName">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.ItemChoiceType2">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType2.CNPJ">
+<remarks/>
+</member>
+<member name="F:Decisao.NFE.ItemChoiceType2.CPF">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeInfAdic">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfAdic.infAdFisco">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeInfAdic.infCpl">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.TMDFeInfMDFeSupl">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.TMDFeInfMDFeSupl.qrCodMDFe">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Gera_Arquivo_NFe_XML.GeraConsultaREcuperacaoNFE(System.String,System.String@)">
+ <summary>
+ Retorna o Caminho que foi salvo os arquivos
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Decisao.NFE.DtNumerosInutilizados">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtNumerosInutilizados.InutilizadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtNumerosInutilizados.InutilizadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtNumerosInutilizados.InutilizadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Decisao.NFE.DsRelComissao">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DsRelComissao.RelComissaoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DsRelComissao.RelComissaoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DsRelComissao.RelComissaoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtMenuSintegra">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtMenuSintegra.MenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtMenuSintegra.MenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtMenuSintegra.MenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="M:Decisao.NFE.ClienteAutoPecas.CriaLista(System.Data.DataSet)">
+ <summary>
+ Cria Lista dos clientes
+ </summary>
+ <param name="Dr"> pAsse um data read</param>
+ <returns> teedeee</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ContasReceberAutoPecas.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ProdutoAutoPecas.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.AlteraCreditoCliente(System.Single,System.Int64)">
+ <summary>
+ 
+ </summary>
+ <param name="Valor">O Valor Passado deve ser somente o valor que deve ser acrecentado. A função Soma o valor com o que já está cadastrado.</param>
+ 
+ <param name="Codigo">O codigo do Cliente, caso seja texto, como o da lidis, o sistema efetua a conversão.</param>
+ <returns> Retorna um Boolean Verdadeiro: Se alterou ou Falso:Se não houve alteração</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.PesquisaCliente_CNPJ(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="CNPJ">O Cnpj para Pesquisa, deve ser com a mascara. </param>
+ <returns>Retorna uma Lista com os dados dos Clientes de acordo com a CLasse cliente</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.PesquisaCliente_Codigo(System.Int64)">
+ <summary>
+ 
+ </summary>
+ <param name="Codigo">O Codigo Passado deve ser Long, caso seja diferente, o próprio sistema convere para String</param>
+ <returns>Retorna uma Lista com os dados dos Clientes de acordo com a CLasse cliente</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.PesquisaCliente_CPF(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="CPF">O Cpf deve ser com Mascara</param>
+ <returns>Retorna uma Lista com os dados dos Clientes de acordo com a CLasse cliente</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.PesquisaCliente_Nome(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="Nome">Passa o Nome do Cliente</param>
+ <returns>Retorna uma Lista com os dados dos Clientes de acordo com a CLasse cliente</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.PesquisaCliente_Todos">
+ <summary>
+ Retorna Todos os Clientes em um list
+ </summary>
+ <returns>Retorna Todos os Clientes em um list</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.MostraCodigoCliente(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Mostra o Codigo do Vendedor quando seleciona o Nome no Combo
+ </summary>
+ <param name="Cb"> o Combo do Vendedor</param>
+ <param name="TxCodigo">O txt que representa o codigo</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOCliente.MostraNomeClientePeloCodigo(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Passa o Codigo pelo Text e mostra o nome no combo
+ </summary>
+ <param name="Cb"> O Combo que ira mostrar o nome</param>
+ <param name="TxCodigo">O Text que tem o Codigo</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOEmitente.RecuperaDadosEmitente">
+ <summary>
+ Retorna os dados do Emitente
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOFornecedor.Pesquisafornecedor_CNPJ(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="CNPJ">O Cnpj para Pesquisa, deve ser com a mascara. </param>
+ <returns>Retorna uma Lista com os dados dos fornecedores de acordo com a CLasse fornecedor</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOFornecedor.PesquisaFornecedor_Codigo(System.Int64)">
+ <summary>
+ 
+ </summary>
+ <param name="Codigo">O Codigo Passado deve ser Long, caso seja diferente, o próprio sistema convere para String</param>
+ <returns>Retorna uma Lista com os dados dos fornecedores de acordo com a CLasse fornecedor</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOFornecedor.PesquisaFornecedor_CPF(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="CPF">O Cpf deve ser com Mascara</param>
+ <returns>Retorna uma Lista com os dados dos fornecedores de acordo com a CLasse fornecedor</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOFornecedor.Pesquisafornecedor_Nome(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="Nome">Passa o Nome do fornecedor</param>
+ <returns>Retorna uma Lista com os dados dos fornecedores de acordo com a CLasse Fornecedores</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOFornecedor.Pesquisafornecedor_Todos">
+ <summary>
+ 
+ </summary>
+ <returns>Retorna Todos os Fornecedores em um list</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Decisao.NFE.DAOProduto.Posicao">
+ <summary>
+ Esta função Retorna um lista com os icms Cadastrados para o produto.
+ Se passar o Estado, retorna os dados referente ao estado, caso nao passe,. retorna todos
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.AlteraEstoqueProduto(Decisao.NFE.NotaFiscal,System.Collections.Generic.List{Decisao.NFE.NotaFiscalDados},System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="Dadosnota"></param>
+ <param name="DadosItemNota"></param>
+ <param name="Tipo">O Valor zero é para baixar o eStoque, O Valor 1 Acrescenta o Estoque</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.AlteraEstoqueProdutoFiscal(Decisao.NFE.NotaFiscal,System.Collections.Generic.List{Decisao.NFE.NotaFiscalDados},System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="Dadosnota"></param>
+ <param name="DadosItemNota"></param>
+ <param name="Tipo">O Valor zero é para baixar o eStoque, O Valor 1 Acrescenta o Estoque</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.MostraCodigoProduto(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Mostra o Codigo do Produto Pelo nome no Combo e Retorna um list com os dados do Produto
+ </summary>
+ <param name="Cb"> o Combo do Produto</param>
+ <param name="TxCodigo">O txt que representa o codigo</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.MostraNomeProdutoPeloCodigo(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Passa o Codigo pelo Text e mostra o nome no combo e retorna Um List com os dados do PRoduto
+ </summary>
+ <param name="Cb"> O Combo que ira mostrar o nome</param>
+ <param name="TxCodigo">O Text que tem o Codigo</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.Grava_Icms_Produto(Decisao.NFE.IcmsProduto)">
+ <summary>
+ Esa função Valida os dados de Imposto acerta os campos que devem ser numericos e Grava o dados no Banco de dados.
+ </summary>
+ <param name="ListIcmsProduto"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.ValidaDados(Decisao.NFE.IcmsProduto)">
+ <summary>
+ Esta função efetua a validação dos dados antes de ser submetido ao banco de dados
+ </summary>
+ <param name="ListaIcms"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.Exclui_ICMS_Produto(System.Int64)">
+ <summary>
+ Efetua a Exclusão do Registro de icms
+ </summary>
+ <param name="Codigo"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.Replica_Icms(System.Int64,System.Int64)">
+ <summary>
+ Esta Função Acrescenta os icms do produto escolhido em todos os outros produtos
+ </summary>
+ <param name="Codigo_Produto"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOProduto.PesquisaProduto_Nome(System.String)">
+ <summary>
+ Retorna o list com os produtos começados pelo argumento passado
+ </summary>
+ <param name="Nome"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOVendedor.CarregaComboVendedor(System.Windows.Forms.ComboBox@)">
+ <summary>
+ Efetua a carga do Combo de Vendedores. Mostra o Nome e Guarda o Codigo
+ </summary>
+ <param name="Cb">Passa o Combo que quer Preencher</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOVendedor.MostraCodigoVendedor(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Mostra o Codigo do Vendedor quando seleciona o Nome no Combo
+ </summary>
+ <param name="Cb"> o Combo do Vendedor</param>
+ <param name="TxCodigo">O txt que representa o codigo</param>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.DAOVendedor.MostraNomePeloCodigo(System.Windows.Forms.ComboBox@,System.Windows.Forms.TextBox@)">
+ <summary>
+ Passa o Codigo pelo Text e mostra o nome no combo
+ </summary>
+ <param name="Cb"> O Combo que ira mostrar o nome</param>
+ <param name="TxCodigo">O Text que tem o Codigo</param>
+ <remarks></remarks>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracao">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracao.tblconfignfeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracao.tblconfignfeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracao.tblconfignfeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracaoTableAdapters.tblconfignfeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Decisao.NFE.DtConfiguracao,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.UpdateInsertedRows(Decisao.NFE.DtConfiguracao,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.UpdateDeletedRows(Decisao.NFE.DtConfiguracao,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.UpdateAll(Decisao.NFE.DtConfiguracao)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Decisao.NFE.DtConfiguracaoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="M:Decisao.NFE.ClienteIndustrial.CriaLista(System.Data.DataSet)">
+ <summary>
+ Cria Lista dos clientes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ClienteLidis.CriaLista(System.Data.DataSet)">
+ <summary>
+ Cria Lista dos clientes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ClienteMotoarte.CriaLista(System.Data.DataSet)">
+ <summary>
+ Cria Lista dos clientes
+ </summary>
+ <param name="Dr"> pAsse um data read</param>
+ <returns> teedeee</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ClienteScae.CriaLista(System.Data.DataSet)">
+ <summary>
+ Cria Lista dos clientes
+ </summary>
+ <param name="Dr"> pAsse um data read</param>
+ <returns> teedeee</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ComissaoLidis.CriaLista(System.Data.IDataReader)">
+ <summary>
+ Esta Função Determina o item baixo por Nota. Se houver um item baixo na nota, todos os itens serão 
+ Considerados como item baixo.
+ </summary>
+ <param name="dadosNota"></param>
+ <param name="DadosItemNota"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ComissaoLidis.LancaComissaoPorItem(Decisao.NFE.NotaFiscal,System.Collections.Generic.List{Decisao.NFE.NotaFiscalDados})">
+ <summary>
+ Nesta Função, os itens baixos serão considerados um a um. Somente o item baixo será processado como 1%
+ os outros serão considerados com 1,5% 
+ </summary>
+ <param name="DadosNota"></param>
+ <param name="DadosItemNota"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ContasReceberIndustrial.CriaLista(System.Data.DataSet,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ContasReceberLidis.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ContasReceberMotoarte.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ContasReceberScae.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ProdutoINdustrial.CriaLista(System.Data.DataSet,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.ProdutoLidis.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.produtoScae.CriaLista(System.Data.IDataReader,System.Boolean)">
+ <summary>
+ Caso a Opcao Nao considera Unidade vier como true, Todas as unidades serão enviadas como UN.
+ </summary>
+ <param name="Dr"></param>
+ <param name="NaoConcideraUnidade"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Decisao.NFE.CertificadoDigital.Assinar(System.Xml.XmlDocument,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+ <summary>
+ Função retirada do UNINFE - http://www.unimake.com.br/uninfe/
+ Modificada por Giovanni - Try Ideas - www.tryideas.com.br para exemplo no Blog www.entendendo.net
+
+ O método assina digitalmente o arquivo XML passado por parâmetro e
+ grava o XML assinado com o mesmo nome, sobreponto o XML informado por parâmetro.
+ Disponibiliza também uma propriedade com uma string do xml assinado (this.vXmlStringAssinado)
+ </summary>
+ <param name="pArqXMLAssinar">Nome do arquivo XML a ser assinado</param>
+ <param name="pUri">URI (TAG) a ser assinada</param>
+ <param name="pCertificado">Certificado a ser utilizado na assinatura</param>
+ <remarks>
+ Podemos pegar como retorno do método as seguintes propriedades:
+
+ - Atualiza a propriedade this.vXMLStringAssinado com a string de
+ xml já assinada
+
+ - Grava o XML sobreponto o informado para o método com o conteúdo
+ já assinado
+
+ - Atualiza as propriedades this.vResultado e
+ this.vResultadoString com os seguintes valores:
+
+ 0 - Assinatura realizada com sucesso
+ 1 - Erro: Problema ao acessar o certificado digital - %exceção%
+ 2 - Problemas no certificado digital
+ 3 - XML mal formado + %exceção%
+ 4 - A tag de assinatura %pUri% não existe
+ 5 - A tag de assinatura %pUri% não é unica
+ 6 - Erro ao assinar o documento - %exceção%
+ 7 - Falha ao tentar abrir o arquivo XML - %exceção%
+ </remarks>
+</member>
+<member name="P:Decisao.NFE.IcmsProduto.Origem">
+ <summary>
+ Determina se é tributado dentro ou fora do EStado
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.#ctor">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.nfeRecepcaoEventoNFCompleted">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.nfeRecepcaoEventoNF(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.nfeRecepcaoEventoNFAsync(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.nfeRecepcaoEventoNFAsync(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsCancelamentoNFe.NFeRecepcaoEvento4.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsCancelamentoNFe.nfeRecepcaoEventoNFCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsCancelamentoNFe.nfeRecepcaoEventoNFCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsCancelamentoNFe.nfeRecepcaoEventoNFCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.WsNFe">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.#ctor">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.HelloWorldCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.BloqueioNfeCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.IncluirBloqueioNfeCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.AlterarQuantidadeNotaCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.AlteraUltimaEmissaoNFeCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.WsNFe.WsNFe.IncluiNossoNumeroReceitaCompleted">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.HelloWorld">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.HelloWorldAsync">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.HelloWorldAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.BloqueioNfe(System.String)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.BloqueioNfeAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.BloqueioNfeAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluirBloqueioNfe(Decisao.NFE.WsNFe.BloqueioNFe)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluirBloqueioNfeAsync(Decisao.NFE.WsNFe.BloqueioNFe)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluirBloqueioNfeAsync(Decisao.NFE.WsNFe.BloqueioNFe,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlterarQuantidadeNota(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlterarQuantidadeNotaAsync(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlterarQuantidadeNotaAsync(System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlteraUltimaEmissaoNFe(System.String,System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlteraUltimaEmissaoNFeAsync(System.String,System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.AlteraUltimaEmissaoNFeAsync(System.String,System.String,System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluiNossoNumeroReceita(System.String,Decisao.NFE.WsNFe.BoletoEmitidoNfe)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluiNossoNumeroReceitaAsync(System.String,Decisao.NFE.WsNFe.BoletoEmitidoNfe)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.IncluiNossoNumeroReceitaAsync(System.String,Decisao.NFE.WsNFe.BoletoEmitidoNfe,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.WsNFe.WsNFe.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.BloqueioNFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.Nome">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.CNPJ">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.Bloqueado">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.DataLimite">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.NumeroNotasEmitir">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.EConvest">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.Telefone">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.Email">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.UltimaEmitida">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.DataUltima">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNFe.Hora">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.BoletoEmitidoNfe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Documento">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Valor">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.NFe">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.CodigoVenda">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Vencimento">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.NossoNumero">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Banco">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Conta">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Agencia">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Carteira">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.TipoMonetario">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.CnpjCliente">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BoletoEmitidoNfe.Sequencia">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.HelloWorldCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.HelloWorldCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.HelloWorldCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.BloqueioNfeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.BloqueioNfeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.BloqueioNfeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.IncluirBloqueioNfeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.IncluirBloqueioNfeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.IncluirBloqueioNfeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.AlterarQuantidadeNotaCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.AlterarQuantidadeNotaCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.AlterarQuantidadeNotaCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.AlteraUltimaEmissaoNFeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.AlteraUltimaEmissaoNFeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.AlteraUltimaEmissaoNFeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.IncluiNossoNumeroReceitaCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.WsNFe.IncluiNossoNumeroReceitaCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.WsNFe.IncluiNossoNumeroReceitaCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteCompleted">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteZipCompleted">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLote(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteAsync(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteAsync(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteZip(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteZipAsync(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.nfeAutorizacaoLoteZipAsync(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.AutorizacaoNFe.NfeAutorizacao.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.AutorizacaoNFe.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.AutorizacaoNFe.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteZipCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteZipCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.AutorizacaoNFe.nfeAutorizacaoLoteZipCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Cancelamento2.NfeCancelamento2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.Cancelamento2.NfeCancelamento2.nfeCancelamentoNF2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.nfeCancelamentoNF2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.BeginnfeCancelamentoNF2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.EndnfeCancelamentoNF2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.nfeCancelamentoNF2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.nfeCancelamentoNF2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Cancelamento2.NfeCancelamento2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Cancelamento2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Cancelamento2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Cancelamento2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Cancelamento2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Cancelamento2.nfeCancelamentoNF2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Cancelamento2.nfeCancelamentoNF2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Cancelamento2.nfeCancelamentoNF2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Consulta2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Consulta2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Consulta2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Consulta2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Consulta2.nfeConsultaNF2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Consulta2.nfeConsultaNF2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Consulta2.nfeConsultaNF2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Consulta2.NfeConsulta2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.Consulta2.NfeConsulta2.nfeConsultaNF2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.nfeConsultaNF2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.BeginnfeConsultaNF2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.EndnfeConsultaNF2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.nfeConsultaNF2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.nfeConsultaNF2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Consulta2.NfeConsulta2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Inutilizacao2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Inutilizacao2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Inutilizacao2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Inutilizacao2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Inutilizacao2.nfeInutilizacaoNF2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Inutilizacao2.nfeInutilizacaoNF2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Inutilizacao2.nfeInutilizacaoNF2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Inutilizacao2.NfeInutilizacao2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.nfeInutilizacaoNF2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.nfeInutilizacaoNF2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.BeginnfeInutilizacaoNF2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.EndnfeInutilizacaoNF2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.nfeInutilizacaoNF2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.nfeInutilizacaoNF2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Inutilizacao2.NfeInutilizacao2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Recepcao2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Recepcao2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Recepcao2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Recepcao2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Recepcao2.NfeRecepcao2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.Recepcao2.NfeRecepcao2.nfeRecepcaoLote2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.nfeRecepcaoLote2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.BeginnfeRecepcaoLote2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.EndnfeRecepcaoLote2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.nfeRecepcaoLote2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.nfeRecepcaoLote2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.Recepcao2.NfeRecepcao2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Recepcao2.nfeRecepcaoLote2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.Recepcao2.nfeRecepcaoLote2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.Recepcao2.nfeRecepcaoLote2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.nfeRecepcaoEventoCompleted">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.nfeRecepcaoEvento(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.BeginnfeRecepcaoEvento(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.EndnfeRecepcaoEvento(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.nfeRecepcaoEventoAsync(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.nfeRecepcaoEventoAsync(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RecepcaoEvento.RecepcaoEvento.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RecepcaoEvento.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RecepcaoEvento.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RecepcaoEvento.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RecepcaoEvento.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RecepcaoEvento.nfeRecepcaoEventoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RecepcaoEvento.nfeRecepcaoEventoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RecepcaoEvento.nfeRecepcaoEventoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.nfeRetAutorizacaoLoteCompleted">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.nfeRetAutorizacaoLote(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.nfeRetAutorizacaoLoteAsync(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.nfeRetAutorizacaoLoteAsync(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetAutorizacao.NfeRetAutorizacao.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetAutorizacao.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetAutorizacao.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetAutorizacao.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetAutorizacao.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetAutorizacao.nfeRetAutorizacaoLoteCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetAutorizacao.nfeRetAutorizacaoLoteCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetAutorizacao.nfeRetAutorizacaoLoteCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetRecepcao2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetRecepcao2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetRecepcao2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetRecepcao2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.nfeRetRecepcao2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.nfeRetRecepcao2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.BeginnfeRetRecepcao2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.EndnfeRetRecepcao2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.nfeRetRecepcao2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.nfeRetRecepcao2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.RetRecepcao2.NfeRetRecepcao2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetRecepcao2.nfeRetRecepcao2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.RetRecepcao2.nfeRetRecepcao2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.RetRecepcao2.nfeRetRecepcao2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.StatusServico2.nfeCabecMsg">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.StatusServico2.nfeCabecMsg.cUF">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.StatusServico2.nfeCabecMsg.versaoDados">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.StatusServico2.nfeCabecMsg.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.StatusServico2.nfeStatusServicoNF2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.StatusServico2.nfeStatusServicoNF2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Decisao.NFE.StatusServico2.nfeStatusServicoNF2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Decisao.NFE.StatusServico2.NfeStatusServico2">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.#ctor(System.String)">
+<remarks/>
+</member>
+<member name="E:Decisao.NFE.StatusServico2.NfeStatusServico2.nfeStatusServicoNF2Completed">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.nfeStatusServicoNF2(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.BeginnfeStatusServicoNF2(System.Xml.XmlNode,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.EndnfeStatusServicoNF2(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.nfeStatusServicoNF2Async(System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.nfeStatusServicoNF2Async(System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Decisao.NFE.StatusServico2.NfeStatusServico2.CancelAsync(System.Object)">
+<remarks/>
+</member>
+</members>
+</doc>

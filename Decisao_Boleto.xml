@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Decisao_Boleto
+</name>
+</assembly>
+<members>
+<member name="M:Decisao_Boleto.Itau.AcertaNumero(System.Double,System.Int16,System.Int16)">
+	<summary>
+ O Campo tamanho deve conter o tamanho total do numero somando o tamanho do inteiro como o tamanho do decimal
+ </summary>
+	<param name="Valor"></param>
+	<param name="tamanho"></param>
+	<param name="Decimais"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Decisao_Boleto.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Decisao_Boleto.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Decisao_Boleto.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

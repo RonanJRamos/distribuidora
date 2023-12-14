@@ -1,0 +1,287 @@
+VERSION 5.00
+Begin VB.Form CancelaNota 
+   BackColor       =   &H00DDFFFF&
+   Caption         =   "Cancelamento de Notas Fiscais"
+   ClientHeight    =   1320
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   4680
+   ControlBox      =   0   'False
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   1320
+   ScaleWidth      =   4680
+   StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command2 
+      Caption         =   "&Fechar F10"
+      Height          =   375
+      Left            =   2880
+      TabIndex        =   3
+      Top             =   720
+      Width           =   1575
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   "&Confirma F3"
+      Height          =   375
+      Left            =   2880
+      TabIndex        =   2
+      Top             =   120
+      Width           =   1575
+   End
+   Begin VB.TextBox txt 
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   120
+      TabIndex        =   0
+      Top             =   600
+      Width           =   2295
+   End
+   Begin VB.Line Line1 
+      X1              =   2640
+      X2              =   2640
+      Y1              =   0
+      Y2              =   1320
+   End
+   Begin VB.Label Label1 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Número da Nota"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   240
+      Left            =   120
+      TabIndex        =   1
+      Top             =   240
+      Width           =   1710
+   End
+End
+Attribute VB_Name = "CancelaNota"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private a As Integer
+Private Sub Command1_Click()
+On Error GoTo ErrCancela
+Dim RsNotaFiscal As adodb.Recordset
+Dim RsCliente As Recordset, RsGalpao As Recordset
+Dim RsComissao As Recordset, RsItens As adodb.Recordset
+Dim RsProduto As adodb.Recordset, RsHistorico As adodb.Recordset
+Dim RsU         As Recordset
+Dim Estoque As ControleDb
+
+Dim LcUnP   As String
+Dim LcUnV   As String
+Dim LcCl    As String
+Dim quant   As Double
+Dim QuantU  As Double
+Dim ComP    As Double
+Dim ComV    As Double
+Dim QuantEstU   As Double
+Dim LcSantu   As Double
+Dim LcSant1u As Double
+Dim LcCalu   As Double
+Dim LcSql1   As String
+Dim LcSql2   As String
+Dim LcSql4   As String
+Dim LcSql8   As String
+Dim LcSanta As Double
+Dim LcSanta2 As Double
+Dim LcCalifornia As Double
+Dim LcUni As String
+
+txt.Text = Right("000000" & txt.Text, 6)
+LcSql1 = "Select * from Alid050 Where NUMNF='" & txt.Text & "'"
+LcSql2 = "Select * from Alid052 Where NUMNF='" & txt.Text & "'"
+LcSql6 = "Select * From alid201 Where NF='" & txt.Text & "'"
+LcSql7 = "Select * From alid015 Where NF LIKE '" & txt.Text & "*'"
+
+'lcsql10 = "Select * From vendasubstestado Where numnf = '" & Txt.Text & "'"
+
+LcSql9 = "Select * From alid004"
+LcCap = Me.Caption
+Me.Caption = "Aguarde,Desfazendo Lançamentos..."
+
+LCSqlInc = "Update alid050 SET "
+LCSqlInc = LCSqlInc & "status='CANCELADA',"
+LCSqlInc = LCSqlInc & "valorproduto=0,"
+LCSqlInc = LCSqlInc & "ValorNota=0,"
+LCSqlInc = LCSqlInc & "DESCONTO=0 "
+    
+LCSqlInc = LCSqlInc & " Where NUMNF='" & txt.Text & "'"
+conexaoAdo.BeginTrans
+'MsgBox LcSqlInc
+conexaoAdo.Execute LCSqlInc, LcRegistrosAfetados
+'conexaoAdo.Execute lcsql10
+
+AbreBase
+
+'Set RsContas = Dbbase.OpenRecordset(LcSql7)
+Set RsComissao = Dbbase.OpenRecordset(LcSql6)
+Set RsU = Dbbase.OpenRecordset(LcSql9)
+
+'===> Abre Itens atraves do Ado
+
+Set RsItens = AbreRecordset(LcSql2, RsItens)
+
+'==> Inicio da Transacao
+'Area.BeginTrans
+'== Solicita a Atuallização da nota Fiscal
+
+
+
+If LcRegistrosAfetados <= 0 Then
+   MsgBox "A Nota Fiscal Não Foi Encontrada...", 64, "Aviso"
+   txt.SetFocus
+   Me.Caption = LcCap
+   conexaoAdo.RollbackTrans
+   Exit Sub
+End If
+Set Estoque = New ControleDb
+Set RsNotaFiscal = AbreRecordset(LcSql1, RsNotaFiscal)
+LcSql3 = "Select * from Alid001 where codigo='" & RsNotaFiscal!CLIENTE & "'"
+Set RsCliente = Dbbase.OpenRecordset(LcSql3)
+'== Apaga as Comissoes
+Do Until RsComissao.EOF
+   RsComissao.Delete
+   RsComissao.MoveNext
+Loop
+'== Apaga as Contas a Receber
+'"Select * From alid015 Where NF LIKE '" & txt.Text & "*'"
+LcSql = "delete From alid015 Where NF LIKE '" & txt.Text & "%'"
+conexaoAdo.Execute LcSql, LcRegistrosAfetados
+
+'Do Until RsContas.EOF
+'   RsContas.Delete
+'   RsContas.MoveNext
+'Loop
+
+LcSql3 = "Select * from Alid001 where codigo='" & RsNotaFiscal!CLIENTE & "'"
+Set RsCliente = Dbbase.OpenRecordset(LcSql3)
+
+If Not RsCliente.EOF Then
+   If RsNotaFiscal!Natureza = "VP" Or RsNotaFiscal!Natureza = "EM" Then
+      RsCliente.Edit
+      RsCliente("CreditoUtilizado") = RsCliente("CreditoUtilizado") - RsNotaFiscal!ValorNota
+      RsCliente.Update
+   End If
+End If
+LcTotal = RsItens.RecordCount
+regat = 1
+Do Until RsItens.EOF
+   
+   DoEvents
+   Me.Caption = "Aguarde, desfazendo item " & regat & " de " & LcTotal
+   LcSql4 = "Select * from produtos where Codigo=" & RsItens!codProd
+   LcSql5 = "Select * From alid013 where ITEM='" & RsItens!codProd & "'"
+   LcSql8 = "Select * from HistoricoProduto Where nf='" & txt.Text & "' and produto='" & RsItens!codProd & "'"
+   Set RsProduto = AbreRecordsetLeitura(LcSql4)
+   Set RsCliente = Dbbase.OpenRecordset("Select * from alid001 where CODIGO='" & RsNotaFiscal!CLIENTE & "'")
+   Set RsHistorico = AbreRecordsetLeitura(LcSql8)
+   If Not RsCliente.EOF Then
+      LcCl = RsCliente!razaosoc & ""
+   Else
+      LcCl = "Cliente Desconhecido"
+   End If
+   'Call Ficha(txt.Text, RsItens!codProd, RsProduto!Nome, RsItens!Qtde, RsItens!VALUNIT, RsItens!Qtde * RsItens!VALUNIT, "CS", LcCl, RsItens!UNIMED, RsItens!QTDUM)
+   'Call estornonotasaida(txt.Text, RsItens!codProd)
+   Estoque.CodProduto = RsItens!codProd
+   Estoque.NF = txt.Text
+   If Not RsHistorico.EOF Then
+      LcSanta = RsHistorico!santa
+      LcSanta2 = RsHistorico!Santa2
+      LcCalifornia = RsHistorico!California
+      LcUni = RsHistorico!CodUnid
+      LcCliente = RsHistorico!clienteforn & ""
+   Else
+      LcSanta = CDbl(RsItens!qtde) * CDbl(RsItens!qtdum)
+      LcSanta2 = 0
+      LcCalifornia = 0
+      LcUni = RsItens!unimed
+      LcCliente = LcCl
+   End If
+   If Not Estoque.EstornaEstoque(0, LcSanta, LcSanta2, LcCalifornia, , LcUni) Then
+      err.Raise vbObjectError + 513, "Erro Estornando o estoque.", "Erro Estornando o Estoque"
+      GoTo ErrCancela
+   End If
+    LcQSanta = LcSanta
+    LcQSanta1 = LcSanta2
+    LcqCanifornia = LcCalifornia
+    LcUn = LcUni
+    
+    LcSq = "insert into HistoricoProduto (produto,descricao,santa,santa2,california,nf,data,tipo,unidade,codunid,ClienteForn) values ('"
+    LcSq = LcSq & Estoque.CodProduto & "','" & Estoque.RetiraCaracter(Estoque.DescricaoProduto) & "'," & LcQSanta & "," & LcQSanta1 & "," & LcqCanifornia
+    LcSq = LcSq & ",'" & Estoque.NF & "','" & Format(Date, "yyyy-mm-dd") & "','CS','" & LcUn & "','0','" & LcCliente & "')"
+    
+    conexaoAdo.Execute LcSq, total
+    
+ 
+  RsItens.MoveNext
+  RsProduto.Close
+  RsHistorico.Close
+  regat = regat + 1
+Loop
+conexaoAdo.CommitTrans
+MsgBox "A Nota Fiscal " & txt.Text & ", Foi Cancelada com sucesso!", 48, "aviso"
+Saida:
+'RsItens.Close
+Me.Caption = LcCap
+txt.Text = ""
+Me.Caption = LcCap
+Exit Sub
+ErrCancela:
+LcResp = MsgBox("Ocorreu o Seguinte Erro :" & Chr(13) & err.Description & "Deseja Tentar Novamente ?", vbInformation + vbYesNo, "Nº do Erro:" & err.Number)
+If LcResp = 6 Then Resume 0
+If LcResp = 7 Then
+   conexaoAdo.RollbackTrans
+   GoTo Saida
+End If
+End Sub
+
+Private Sub Command1_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 13 Then SendKeys "{TAB}"
+If KeyCode = 114 Then SendKeys "%+{C}"
+If KeyCode = 121 Then SendKeys "%+{F}"
+End Sub
+
+Private Sub Command2_Click()
+On Error Resume Next
+Unload Me
+End Sub
+
+Private Sub Command2_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 13 Then SendKeys "{TAB}"
+If KeyCode = 114 Then SendKeys "%+{C}"
+If KeyCode = 121 Then SendKeys "%+{F}"
+End Sub
+
+Private Sub Form_Load()
+On Error Resume Next
+'abreconexao
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+On Error Resume Next
+'FechaConexao
+FrmPrincipal.SetFocus
+End Sub
+
+Private Sub txt_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 13 Then SendKeys "{TAB}"
+If KeyCode = 114 Then SendKeys "%+{C}"
+If KeyCode = 121 Then SendKeys "%+{F}"
+End Sub

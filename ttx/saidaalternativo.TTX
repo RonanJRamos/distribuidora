@@ -1,0 +1,23 @@
+; Field definition file for table: ADORecordset
+NUMNF	string	20	string sample value
+DTEMIS	datetime		Jan 5, 1994 1:23:45 PM
+CLIENTE	string	20	string sample value
+ITEM	string	10	string sample value
+QTDE	number		1.00
+VALUNIT	number		1.00
+UNIMED	string	150	string sample value
+QTDUM	string	255	string sample value
+descricao	memo		memo sample data
+codProd	long		1
+valorproduto	number		1.00
+ValorNota	number		1.00
+Vendedor	string	10	string sample value
+formapag	string	50	string sample value
+dias	string	50	string sample value
+DESCONTO	number		1.00
+localentrega	string	100	string sample value
+oc	string	30	string sample value
+enderecoentrega	string	255	string sample value
+OBS02	string	60	string sample value
+OBS03	string	60	string sample value
+OBS04	string	60	string sample value

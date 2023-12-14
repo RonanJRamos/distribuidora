@@ -1,0 +1,15 @@
+Codigo	long		1
+NF	string	6	string sample value
+CFOP	string	4	string sample value
+CodFornecedor	string	6	string sample value
+NomeFornecedor	string	50	string sample value
+ValorProduto	number		1.00
+BaseIcms	number		1.00
+Icms	number		1.00
+BaseSubs	number		1.00
+ValorIcmsSubs	number		1.00
+Ipi	number		1.00
+TotalNota	number		1.00
+Entrada	datetime		Jan 5, 1994 1:23:45 PM
+QuantidadeSaida	number		1.00
+PerICMS	number		1.00

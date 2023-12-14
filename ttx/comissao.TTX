@@ -1,0 +1,12 @@
+; Field definition file for table: ADORecordset
+Codigo	long		1
+NUMNF	string	6	string sample value
+DTEMIS	datetime		Jan 5, 1994 1:23:45 PM
+CLIENTE	string	20	string sample value
+ValorNota	currency		1.00
+Vendedor	string	5	string sample value
+status	string	50	string sample value
+QTDE	number		1.00
+codProd	string	20	string sample value
+descricao	memo		memo sample data
+VALUNIT	number		1.00

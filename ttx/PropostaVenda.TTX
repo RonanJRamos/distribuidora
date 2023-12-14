@@ -1,0 +1,105 @@
+; Field definition file for table: ADORecordset
+NUMNF	string	6	string sample value
+DTEMIS	datetime		Jan 5, 1994 1:23:45 PM
+NATUREZA	string	2	string sample value
+CLIENTE	string	20	string sample value
+TRANSP	string	30	string sample value
+TIPOTRANS	string	1	string sample value
+PLACATRANS	string	8	string sample value
+UFTRANS	string	2	string sample value
+CGCCPFTRAN	string	20	string sample value
+ENDTRANS	string	30	string sample value
+ITEM	string	5	string sample value
+GALPAO	string	2	string sample value
+QTDE	number		1.00
+VALUNIT	number		1.00
+CONTR	string	7	string sample value
+UNIMED	string	2	string sample value
+QTDUM	number		1.00
+QTDE01	number		1.00
+QTDE02	number		1.00
+QTDE03	number		1.00
+codigo	long		1
+descricao	string	100	string sample value
+codProd	string	20	string sample value
+Bloqueado	boolean		TRUE
+TipoLiberacao	long		1
+JaEsteveBloqueado	boolean		TRUE
+MaquinaLiberacao	string	50	string sample value
+dataliberacao	datetime		Jan 5, 1994 1:23:45 PM
+HoraLiberacao	string	50	string sample value
+Usuario	string	100	string sample value
+faturado	boolean		TRUE
+SubItem	string	100	string sample value
+NCM	string	15	string sample value
+Compra	number		1.00
+CST	string	5	string sample value
+MUNICTRANS	string	20	string sample value
+UFMUNIC	string	2	string sample value
+INSCEST	string	20	string sample value
+OBS02	string	60	string sample value
+OBS03	string	60	string sample value
+OBS04	string	60	string sample value
+CONTR	string	7	string sample value
+codigo	long		1
+valorproduto	currency		1.00
+ValorNota	currency		1.00
+Vendedor	string	5	string sample value
+fonetransp	string	50	string sample value
+CIDADE	string	40	string sample value
+CEP	string	50	string sample value
+formapag	string	50	string sample value
+dias	string	50	string sample value
+vencimento1	datetime		Jan 5, 1994 1:23:45 PM
+vencimento2	datetime		Jan 5, 1994 1:23:45 PM
+vencimento3	datetime		Jan 5, 1994 1:23:45 PM
+vencimento4	datetime		Jan 5, 1994 1:23:45 PM
+vencimento5	datetime		Jan 5, 1994 1:23:45 PM
+CondPag	string	50	string sample value
+status	string	50	string sample value
+DESCONTO	currency		1.00
+Previsao	datetime		Jan 5, 1994 1:23:45 PM
+Liberado	long		1
+faturado	boolean		TRUE
+Validade	string	50	string sample value
+OrdemCompra	string	50	string sample value
+obs	memo		memo sample data
+ICMS	string	50	string sample value
+Bloqueado	boolean		TRUE
+dataliberacao	datetime		Jan 5, 1994 1:23:45 PM
+JaEsteveBloqueado	boolean		TRUE
+MaquinaLiberacao	string	50	string sample value
+HoraLiberacao	string	50	string sample value
+pendente	boolean		TRUE
+Usuario	string	100	string sample value
+dias1	string	50	string sample value
+dias2	string	50	string sample value
+dias3	string	50	string sample value
+Romaneio	boolean		TRUE
+EnderecoEntrega	string	100	string sample value
+Oc	string	30	string sample value
+FANTASIA	string	50	string sample value
+RAZAOSOC	string	150	string sample value
+END	string	40	string sample value
+BAIRRO	string	20	string sample value
+CIDADE	string	4	string sample value
+ESTADO	string	2	string sample value
+CEP	string	10	string sample value
+FONE1	string	20	string sample value
+FONE2	string	20	string sample value
+CONTATO	string	30	string sample value
+CGC	string	20	string sample value
+INSCEST	string	20	string sample value
+email	string	250	string sample value
+cpf	string	50	string sample value
+rg	string	50	string sample value
+formapag	string	50	string sample value
+dias	string	50	string sample value
+Validade	string	50	string sample value
+valorproduto	currency		1.00
+ValorNota	currency		1.00
+DESCONTO	currency		1.00
+NOME	string	50	string sample value
+NomeCidade	string	150	string sample value
+Numero	string	50	string sample value
+NCM	string	10	string sample value

@@ -1,0 +1,13 @@
+'==> Criar Campo EstoqueSeguranca Cadastro de PRodutos
+
+ALTER TABLE `lidis`.`produtos`  ADD COLUMN `EstoqueSeguranca` double(12,3) NULL DEFAULT 0;
+
+'==> Criar campo CompraFora na tabela NfEntrada
+
+ALTER TABLE `lidis`.`entradanf` ADD COLUMN `CompraFora` int(11) NULL DEFAULT 0;
+ALTER TABLE `lidis`.`produtos`  ADD COLUMN `per` double(12,2) NULL DEFAULT 0;
+Copiar a Tabela Alid050 para Saidas
+Copiar a tabela Alid052 para saidasdados
+
+copiar a tabela numeronota para a tb numeronotaAlternativo
+Acrescentar no banco lidis.mdb tabela alid050 o campo romaneiogerado tipo sim/nao

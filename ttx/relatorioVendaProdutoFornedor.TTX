@@ -1,0 +1,15 @@
+; Field definition file for table: ADORecordset
+Vendedor	string	5	string sample value
+NUMNF	string	6	string sample value
+DTEMIS	datetime		Jan 5, 1994 1:23:45 PM
+NomeVendedorImprimir string	150	string sample value
+CLIENTE	string	20	string sample value
+NomeCliente string	150	string sample value
+codProd	  long		1
+descricao   string	150	string sample value
+UNIMED  	string	50	string sample value
+QTDE	number		1.00
+VALUNIT	number		1.00
+desconto	number		1.00
+VALORTOTAL	number		1.00
+Fornecedor	string	50	string sample value

@@ -1,0 +1,21 @@
+; Field definition file for table: ADORecordset
+VENDEDOR	string	5	string sample value
+NF	string	6	string sample value
+PRODUTO	long		1
+QUANTIDADE	number		1.00
+VALORUNIT	number		1.00
+VALORTOTAL	number		1.00
+ITEMBAIXO	long		1
+COMISSAO	number		1.00
+DATAVENDA	datetime		Jan 5, 1994 1:23:45 PM
+CLIENTE	string	20	string sample value
+codigo	long		1
+pago	long		1
+Fornecedor	string	50	string sample value
+percentual	string	50	string sample value
+valorpago	number		1.00
+saldo	number		1.00
+NomeCliente	string	80	string sample value
+NomeVendedor	string	80	string sample value
+NOME	string	50	string sample value
+DescontUnitario	number		1.00
