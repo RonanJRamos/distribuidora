@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
+Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "msmask32.ocx"
 Object = "{00025600-0000-0000-C000-000000000046}#5.1#0"; "crystl32.ocx"
 Begin VB.Form FrmRelEntradaNfPeriodo 
    BorderStyle     =   1  'Fixed Single
@@ -299,7 +299,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Type DadoFornecedor
-        Codigo As String
+        codigo As String
         Nome As String
 End Type
 Private MtFornecedor() As DadoFornecedor
@@ -315,15 +315,15 @@ If KeyCode = 13 Then SendKeys "{TAB}"
 
 End Sub
 Function GeraDados()
-On Error GoTo ErrGera
-Dim RsNota As adodb.Recordset
+On Error GoTo errGera
+Dim RsNota As ADODB.Recordset
 Dim RsNotaMdb As Recordset
 Dim LcSql As String
 Dim LcNome As String
 Dim db As Database
 Dim C As Integer
 LcSql = "Select * from EntradaNf where data Between '" & Format(Datai.Text, "yyyy-mm-dd") & "' And '" & Format(Dataf.Text, "yyyy-mm-dd") & "'"
-If Fornecedor.ListIndex > -1 Then LcSql = LcSql & " and CLICRED='" & Nome.Text & "'"
+If fornecedor.ListIndex > -1 Then LcSql = LcSql & " and CLICRED='" & Nome.Text & "'"
 'AbreBase
 Set db = OpenDatabase(GLBase)
 '==> Apagando Registros
@@ -358,13 +358,13 @@ RsNota.Close
 RsNotaMdb.Close
 geradados1
 Exit Function
-ErrGera:
+errGera:
 'MsgBox err.Description & err.Number
 Resume Next
 End Function
 Function geradados1()
-On Error GoTo ErrGera
-Dim RsNota As adodb.Recordset
+On Error GoTo errGera
+Dim RsNota As ADODB.Recordset
 Dim RsNotaMdb As Recordset
 Dim Rs As Recordset
 Dim LcSql As String
@@ -377,7 +377,7 @@ Set db = OpenDatabase(GLBase)
 db.Execute "Delete * from ItensEntradaNf"
 Set RsNotaMdb = db.OpenRecordset("Select * from ItensEntradaNf", dbOpenDynaset, dbSeeChanges, dbOptimistic)
 'Set Rs = db.OpenRecordset("Select * from EntradaNf", dbOpenDynaset, dbSeeChanges, dbOptimistic)
-LcSql = "Select * from ItensEntradaNf where (ItensEntradaNf.data Between #" & Format(Datai.Text, "mm/dd/yy") & "# And #" & Format(Dataf.Text, "mm/dd/yy") & "#)  and descricao like '" & UCase(Text1.Text) & "%' and fornecedor like '" & Fornecedor.Text & "%';"
+LcSql = "Select * from ItensEntradaNf where (ItensEntradaNf.data Between #" & Format(Datai.Text, "mm/dd/yy") & "# And #" & Format(Dataf.Text, "mm/dd/yy") & "#)  and descricao like '" & UCase(Text1.Text) & "%' and fornecedor like '" & fornecedor.Text & "%';"
 'Debug.Print LcSql
 
  Set RsNota = AbreRecordset(LcSql, True)
@@ -399,7 +399,7 @@ LcSql = "Select * from ItensEntradaNf where (ItensEntradaNf.data Between #" & Fo
 'RsNota.Close
 RsNotaMdb.Close
 Exit Function
-ErrGera:
+errGera:
 'MsgBox err.Description & err.Number
 'Resume 0
 Resume Next
@@ -414,9 +414,9 @@ Set RsEmpresa = Dbbase.OpenRecordset("select * from alid002 order by razaosoc") 
 Do Until RsEmpresa.EOF
     ReDim Preserve MtFornecedor(LcTam)
     If Not IsNull(RsEmpresa!razaosoc) Then
-        MtFornecedor(LcTam).Codigo = RsEmpresa!Codigo
+        MtFornecedor(LcTam).codigo = RsEmpresa!codigo
         MtFornecedor(LcTam).Nome = RsEmpresa!razaosoc
-        Fornecedor.AddItem RsEmpresa!razaosoc
+        fornecedor.AddItem RsEmpresa!razaosoc
         LcTam = LcTam + 1
     End If
     RsEmpresa.MoveNext
@@ -434,7 +434,7 @@ Private Sub Command1_Click()
 'On Error Resume Next
 Dim LcFormula, LcCriterio As String, LcTipoSaida As Integer
 Dim RsEmpresa As Recordset, RsOpcao As Recordset
-Dim LcEmpresa, LcEndereco, LcFone, Lccelular, Lccelular1, Lcemail, LcVer, LcVer1, LcCap As String
+Dim LcEmpresa, LcEndereco, LcFone, LcCelular, Lccelular1, Lcemail, LcVer, LcVer1, LcCap As String
 geradados1
 AbreBase
 Set RsEmpresa = Dbbase.OpenRecordset("Empresa", dbOpenDynaset, dbSeeChanges, dbOptimistic)
@@ -469,9 +469,9 @@ End If
     'Else
        'lctitulo = "Relatório de Comissões << SINTÉTICO >>"
    ' End If
-    'CryRelatorio.SortFields(0) = "+{ItensEntradaNf.descricao}"
+    CryRelatorio.SortFields(0) = "+{ItensEntradaNf.descricao}"
     
-    CryRelatorio.CopiesToPrinter = Val(copias.Text)
+    CryRelatorio.CopiesToPrinter = Val(Copias.Text)
     'If Comissao.Text <> "TODOS" Then
        'LcFormula = "{ALID201.VENDEDOR} = '" & codigo.Text & "'"
     'End If
@@ -493,7 +493,7 @@ End If
   If Len(LcFormula) <> 0 Then LcFormula = LcFormula & " And "
   LcFormula = LcFormula & "{ItensEntradaNf.DATA} >=" & LcChav1 & " And {ItensEntradaNf.data} <=" & LcChav2
   'LcFormula = LcFormula & " AND {ALID050.NATUREZA} <>'TR'"
-  LcFormula = LcFormula & " and {ItensEntradaNf.fornecedor} like'" & Fornecedor.Text & "*'"
+  LcFormula = LcFormula & " and {ItensEntradaNf.fornecedor} like'" & fornecedor.Text & "*'"
 '== fim filtro
 '== fim filtro
 CryRelatorio.DiscardSavedData = True
@@ -509,11 +509,11 @@ CryRelatorio.WindowTitle = "Entrada de Estoque por Produto"
  CryRelatorio.Formulas(3) = "titulo='Relatório de Entrada de Estoque por Período'"
  'CryRelatorio.Formulas(4) = "Versiculo='" & LcVer & "'"
  'CryRelatorio.Formulas(5) = "Versiculo1='" & LcVer1 & "'"
- CryRelatorio.Formulas(5) = "Celular='" & Lccelular & "'"
+ CryRelatorio.Formulas(5) = "Celular='" & LcCelular & "'"
  CryRelatorio.Formulas(4) = "Celular1='" & Lccelular1 & "'"
  CryRelatorio.Formulas(6) = "email='" & Lcemail & "'"
 
-If impressora Then
+If Impressora Then
    LcTipoSaida = 1
 Else
    LcTipoSaida = 0
@@ -600,8 +600,8 @@ End Sub
 
 Private Sub fornecedor_Click()
 For a = 0 To LcTam
-    If MtFornecedor(a).Nome = Fornecedor.Text Then
-       Nome.Text = MtFornecedor(a).Codigo
+    If MtFornecedor(a).Nome = fornecedor.Text Then
+       Nome.Text = MtFornecedor(a).codigo
        Exit For
     End If
 Next
@@ -615,7 +615,7 @@ If KeyCode = 13 Then SendKeys "{TAB}"
 End Sub
 
 Private Sub Impressora_Click()
-copias.Visible = True
+Copias.Visible = True
 Label3.Visible = True
 End Sub
 
@@ -638,7 +638,7 @@ If KeyCode = 13 Then SendKeys "{TAB}"
 End Sub
 
 Private Sub Video_Click()
-copias.Visible = False
+Copias.Visible = False
 Label3.Visible = False
 End Sub
 

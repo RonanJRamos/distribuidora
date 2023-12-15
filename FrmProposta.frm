@@ -6,7 +6,7 @@ Begin VB.Form FrmProposta
    BackColor       =   &H00D8C5B6&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Saída de Estoque"
-   ClientHeight    =   8745
+   ClientHeight    =   9735
    ClientLeft      =   150
    ClientTop       =   435
    ClientWidth     =   11850
@@ -23,10 +23,49 @@ Begin VB.Form FrmProposta
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8745
+   ScaleHeight     =   9735
    ScaleWidth      =   11850
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
+   Begin VB.TextBox InformacoesComplementares 
+      Height          =   855
+      Left            =   5400
+      MultiLine       =   -1  'True
+      ScrollBars      =   2  'Vertical
+      TabIndex        =   34
+      Top             =   7440
+      Width           =   6375
+   End
+   Begin VB.TextBox VendedorImprimir 
+      Height          =   285
+      Left            =   240
+      TabIndex        =   30
+      Top             =   7440
+      Width           =   4935
+   End
+   Begin VB.TextBox ValidadeCotacao 
+      Height          =   285
+      Left            =   2520
+      TabIndex        =   33
+      Text            =   "3 DIAS"
+      Top             =   8640
+      Width           =   2655
+   End
+   Begin VB.TextBox PrazoEntrega 
+      Height          =   285
+      Left            =   240
+      TabIndex        =   32
+      Text            =   "Imediato"
+      Top             =   8640
+      Width           =   2055
+   End
+   Begin VB.TextBox CondPag 
+      Height          =   285
+      Left            =   240
+      TabIndex        =   31
+      Top             =   8040
+      Width           =   4935
+   End
    Begin VB.CommandButton CmdDuplicarPedido 
       Caption         =   "Duplicar Pedido "
       BeginProperty Font 
@@ -40,8 +79,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   105
-      Top             =   3243
+      TabIndex        =   110
+      Top             =   3000
       Width           =   1575
    End
    Begin VB.CommandButton Command11 
@@ -57,15 +96,15 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   103
-      Top             =   2172
+      TabIndex        =   108
+      Top             =   1935
       Width           =   1575
    End
    Begin VB.TextBox Lucratividade 
       Height          =   285
       Left            =   8880
       Locked          =   -1  'True
-      TabIndex        =   102
+      TabIndex        =   107
       TabStop         =   0   'False
       Top             =   2400
       Visible         =   0   'False
@@ -77,7 +116,7 @@ Begin VB.Form FrmProposta
       Enabled         =   0   'False
       Height          =   255
       Left            =   4200
-      TabIndex        =   100
+      TabIndex        =   105
       Top             =   1320
       Width           =   3015
    End
@@ -86,7 +125,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00000000&
       Height          =   375
       Left            =   8160
-      TabIndex        =   98
+      TabIndex        =   103
       Top             =   0
       Visible         =   0   'False
       Width           =   1695
@@ -104,8 +143,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   97
-      Top             =   2886
+      TabIndex        =   102
+      Top             =   2640
       Width           =   1575
    End
    Begin VB.CommandButton Command9 
@@ -122,8 +161,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   96
-      Top             =   2529
+      TabIndex        =   101
+      Top             =   2295
       Width           =   1575
    End
    Begin VB.CheckBox Pendente 
@@ -132,7 +171,7 @@ Begin VB.Form FrmProposta
       Enabled         =   0   'False
       Height          =   375
       Left            =   7320
-      TabIndex        =   95
+      TabIndex        =   100
       Top             =   2040
       Width           =   1335
    End
@@ -140,7 +179,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   285
       Left            =   10440
-      TabIndex        =   94
+      TabIndex        =   99
       Text            =   "0"
       Top             =   3960
       Visible         =   0   'False
@@ -150,7 +189,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   285
       Left            =   10800
-      TabIndex        =   87
+      TabIndex        =   92
       Text            =   "0"
       Top             =   3960
       Visible         =   0   'False
@@ -160,7 +199,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   375
       Left            =   8160
-      TabIndex        =   86
+      TabIndex        =   91
       Top             =   0
       Visible         =   0   'False
       Width           =   1335
@@ -169,7 +208,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   375
       Left            =   8160
-      TabIndex        =   85
+      TabIndex        =   90
       Top             =   0
       Visible         =   0   'False
       Width           =   1455
@@ -178,7 +217,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   375
       Left            =   8160
-      TabIndex        =   84
+      TabIndex        =   89
       Top             =   0
       Visible         =   0   'False
       Width           =   495
@@ -187,7 +226,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   375
       Left            =   8280
-      TabIndex        =   83
+      TabIndex        =   88
       Top             =   0
       Visible         =   0   'False
       Width           =   1335
@@ -196,7 +235,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00FF8080&
       Height          =   375
       Left            =   8160
-      TabIndex        =   82
+      TabIndex        =   87
       Top             =   0
       Visible         =   0   'False
       Width           =   615
@@ -206,7 +245,7 @@ Begin VB.Form FrmProposta
       Left            =   7800
       MultiLine       =   -1  'True
       ScrollBars      =   2  'Vertical
-      TabIndex        =   81
+      TabIndex        =   86
       Top             =   1200
       Visible         =   0   'False
       Width           =   735
@@ -224,8 +263,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   80
-      Top             =   1071
+      TabIndex        =   85
+      Top             =   825
       Width           =   1575
    End
    Begin VB.CommandButton Command7 
@@ -241,8 +280,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   79
-      Top             =   1815
+      TabIndex        =   84
+      Top             =   1575
       Width           =   1575
    End
    Begin VB.CommandButton Command3 
@@ -258,9 +297,10 @@ Begin VB.Form FrmProposta
          Strikethrough   =   0   'False
       EndProperty
       Height          =   345
-      Left            =   10200
-      TabIndex        =   78
-      Top             =   0
+      Left            =   5880
+      TabIndex        =   83
+      Top             =   120
+      Visible         =   0   'False
       Width           =   1575
    End
    Begin VB.CommandButton Command4 
@@ -276,8 +316,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   77
-      Top             =   357
+      TabIndex        =   82
+      Top             =   120
       Width           =   1575
    End
    Begin VB.CommandButton Command5 
@@ -293,8 +333,8 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   10200
-      TabIndex        =   76
-      Top             =   714
+      TabIndex        =   81
+      Top             =   480
       Width           =   1575
    End
    Begin VB.CommandButton Command6 
@@ -310,7 +350,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   345
       Left            =   8160
-      TabIndex        =   75
+      TabIndex        =   80
       Top             =   0
       Visible         =   0   'False
       Width           =   1575
@@ -352,7 +392,7 @@ Begin VB.Form FrmProposta
       Enabled         =   0   'False
       Height          =   375
       Left            =   6000
-      TabIndex        =   70
+      TabIndex        =   75
       Top             =   2040
       Width           =   1095
    End
@@ -390,18 +430,18 @@ Begin VB.Form FrmProposta
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   405
+      Height          =   360
       Index           =   17
-      Left            =   120
-      TabIndex        =   32
-      Top             =   8280
+      Left            =   240
+      TabIndex        =   38
+      Top             =   9240
       Width           =   1575
    End
    Begin VB.TextBox Txt 
       Height          =   285
       Index           =   6
       Left            =   8040
-      TabIndex        =   63
+      TabIndex        =   68
       Top             =   1560
       Width           =   1815
    End
@@ -425,7 +465,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   6240
-      TabIndex        =   61
+      TabIndex        =   66
       Text            =   "0"
       Top             =   6120
       Visible         =   0   'False
@@ -442,10 +482,10 @@ Begin VB.Form FrmProposta
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
-      Left            =   5160
-      TabIndex        =   60
+      Left            =   5040
+      TabIndex        =   65
       Text            =   "0"
-      Top             =   6840
+      Top             =   6360
       Visible         =   0   'False
       Width           =   975
    End
@@ -461,7 +501,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   4560
-      TabIndex        =   59
+      TabIndex        =   64
       Text            =   "0"
       Top             =   5400
       Visible         =   0   'False
@@ -479,7 +519,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   9720
-      TabIndex        =   58
+      TabIndex        =   63
       Text            =   "0"
       Top             =   5760
       Visible         =   0   'False
@@ -490,7 +530,7 @@ Begin VB.Form FrmProposta
       ItemData        =   "FrmProposta.frx":0000
       Left            =   8520
       List            =   "FrmProposta.frx":0016
-      TabIndex        =   57
+      TabIndex        =   62
       Text            =   "512"
       Top             =   600
       Width           =   1335
@@ -506,10 +546,10 @@ Begin VB.Form FrmProposta
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
-      Left            =   9000
-      TabIndex        =   55
+      Left            =   8760
+      TabIndex        =   60
       Text            =   "0"
-      Top             =   6840
+      Top             =   6240
       Visible         =   0   'False
       Width           =   975
    End
@@ -525,7 +565,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   360
-      TabIndex        =   54
+      TabIndex        =   59
       Text            =   "0"
       Top             =   6240
       Visible         =   0   'False
@@ -546,9 +586,9 @@ Begin VB.Form FrmProposta
    End
    Begin VB.TextBox tam 
       Height          =   375
-      Left            =   7680
-      TabIndex        =   52
-      Top             =   6600
+      Left            =   7440
+      TabIndex        =   57
+      Top             =   6240
       Visible         =   0   'False
       Width           =   855
    End
@@ -564,7 +604,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   7440
-      TabIndex        =   51
+      TabIndex        =   56
       Top             =   5760
       Visible         =   0   'False
       Width           =   615
@@ -580,12 +620,12 @@ Begin VB.Form FrmProposta
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   405
+      Height          =   360
       Index           =   16
-      Left            =   3360
-      TabIndex        =   48
-      Top             =   8280
-      Width           =   1575
+      Left            =   3480
+      TabIndex        =   53
+      Top             =   9240
+      Width           =   1695
    End
    Begin VB.TextBox Txt 
       Alignment       =   2  'Center
@@ -598,11 +638,11 @@ Begin VB.Form FrmProposta
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   405
+      Height          =   360
       Index           =   15
-      Left            =   1680
-      TabIndex        =   47
-      Top             =   8280
+      Left            =   1800
+      TabIndex        =   52
+      Top             =   9240
       Width           =   1575
    End
    Begin VB.TextBox Txt 
@@ -615,13 +655,13 @@ Begin VB.Form FrmProposta
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   1125
+      Height          =   1005
       Index           =   14
       Left            =   5400
       MultiLine       =   -1  'True
       ScrollBars      =   2  'Vertical
-      TabIndex        =   45
-      Top             =   7560
+      TabIndex        =   35
+      Top             =   8640
       Width           =   6375
    End
    Begin VB.TextBox Txt 
@@ -637,10 +677,11 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   405
       Index           =   13
-      Left            =   120
+      Left            =   8160
       Locked          =   -1  'True
-      TabIndex        =   42
-      Top             =   7560
+      TabIndex        =   48
+      Top             =   5160
+      Visible         =   0   'False
       Width           =   1575
    End
    Begin VB.TextBox Txt 
@@ -656,10 +697,11 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   405
       Index           =   11
-      Left            =   1680
+      Left            =   9720
       Locked          =   -1  'True
-      TabIndex        =   41
-      Top             =   7560
+      TabIndex        =   47
+      Top             =   5160
+      Visible         =   0   'False
       Width           =   1575
    End
    Begin VB.TextBox cst 
@@ -674,7 +716,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   3120
-      TabIndex        =   40
+      TabIndex        =   46
       Top             =   6360
       Visible         =   0   'False
       Width           =   615
@@ -691,7 +733,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   4320
-      TabIndex        =   39
+      TabIndex        =   45
       Top             =   6360
       Visible         =   0   'False
       Width           =   615
@@ -708,7 +750,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   8400
-      TabIndex        =   38
+      TabIndex        =   44
       Top             =   6000
       Visible         =   0   'False
       Width           =   615
@@ -805,7 +847,7 @@ Begin VB.Form FrmProposta
       EndProperty
       Height          =   375
       Left            =   6840
-      TabIndex        =   33
+      TabIndex        =   39
       Top             =   5280
       Visible         =   0   'False
       Width           =   615
@@ -831,9 +873,9 @@ Begin VB.Form FrmProposta
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   1200
-      TabIndex        =   31
-      Top             =   7560
+      Left            =   11280
+      TabIndex        =   37
+      Top             =   6360
       Visible         =   0   'False
       Width           =   255
    End
@@ -849,9 +891,9 @@ Begin VB.Form FrmProposta
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
-      Left            =   10800
-      TabIndex        =   30
-      Top             =   8400
+      Left            =   10920
+      TabIndex        =   36
+      Top             =   8640
       Visible         =   0   'False
       Width           =   375
    End
@@ -859,7 +901,7 @@ Begin VB.Form FrmProposta
       Height          =   3015
       Left            =   120
       TabIndex        =   29
-      Top             =   4200
+      Top             =   4080
       Width           =   11655
       _ExtentX        =   20558
       _ExtentY        =   5318
@@ -900,7 +942,7 @@ Begin VB.Form FrmProposta
       Height          =   375
       Left            =   10200
       TabIndex        =   27
-      Top             =   1428
+      Top             =   1185
       Width           =   1575
    End
    Begin VB.CommandButton CmdFechar 
@@ -917,7 +959,7 @@ Begin VB.Form FrmProposta
       Height          =   345
       Left            =   10200
       TabIndex        =   26
-      Top             =   3600
+      Top             =   3360
       Width           =   1575
    End
    Begin VB.TextBox Txt 
@@ -1022,6 +1064,123 @@ Begin VB.Form FrmProposta
       Format          =   "#,##0.00;(#,##0.00)"
       PromptChar      =   " "
    End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "(Só sai na NFe)"
+      ForeColor       =   &H000000FF&
+      Height          =   195
+      Index           =   23
+      Left            =   8400
+      TabIndex        =   117
+      Top             =   7200
+      Width           =   1335
+   End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Informações Complementares para NFe"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FF0000&
+      Height          =   195
+      Index           =   22
+      Left            =   5400
+      TabIndex        =   116
+      Top             =   7200
+      Width           =   2790
+   End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Nome Vendedor a Imprimir"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   195
+      Index           =   21
+      Left            =   240
+      TabIndex        =   115
+      Top             =   7200
+      Width           =   1860
+   End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Validade Cotação"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   195
+      Index           =   20
+      Left            =   2520
+      TabIndex        =   114
+      Top             =   8400
+      Width           =   1260
+   End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Prazo de Entrega"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   195
+      Index           =   19
+      Left            =   240
+      TabIndex        =   113
+      Top             =   8400
+      Width           =   1230
+   End
+   Begin VB.Label Label3 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Condições de Pagamento"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   195
+      Index           =   18
+      Left            =   240
+      TabIndex        =   112
+      Top             =   7800
+      Width           =   1830
+   End
    Begin VB.Label LabelBloqueado 
       AutoSize        =   -1  'True
       BackStyle       =   0  'Transparent
@@ -1038,7 +1197,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   360
       Left            =   3000
-      TabIndex        =   106
+      TabIndex        =   111
       Top             =   120
       Width           =   2595
    End
@@ -1058,7 +1217,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Left            =   3120
-      TabIndex        =   104
+      TabIndex        =   109
       Top             =   2520
       Width           =   2490
    End
@@ -1069,7 +1228,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00FF0000&
       Height          =   195
       Left            =   8880
-      TabIndex        =   101
+      TabIndex        =   106
       Top             =   2160
       Visible         =   0   'False
       Width           =   750
@@ -1081,7 +1240,7 @@ Begin VB.Form FrmProposta
       Height          =   195
       Index           =   1
       Left            =   120
-      TabIndex        =   99
+      TabIndex        =   104
       Top             =   2400
       Width           =   1560
    End
@@ -1090,7 +1249,7 @@ Begin VB.Form FrmProposta
       Caption         =   "Est. e Pr. Insf."
       Height          =   255
       Left            =   3240
-      TabIndex        =   93
+      TabIndex        =   98
       Top             =   3840
       Width           =   1335
    End
@@ -1098,7 +1257,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H008080FF&
       Height          =   255
       Left            =   4440
-      TabIndex        =   92
+      TabIndex        =   97
       Top             =   3840
       Width           =   375
    End
@@ -1107,7 +1266,7 @@ Begin VB.Form FrmProposta
       Caption         =   "Preço Baixo"
       Height          =   255
       Left            =   1680
-      TabIndex        =   91
+      TabIndex        =   96
       Top             =   3840
       Width           =   1215
    End
@@ -1115,7 +1274,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H00C0C000&
       Height          =   255
       Left            =   2760
-      TabIndex        =   90
+      TabIndex        =   95
       Top             =   3840
       Width           =   375
    End
@@ -1124,7 +1283,7 @@ Begin VB.Form FrmProposta
       Caption         =   "Est. Insufic."
       Height          =   255
       Left            =   120
-      TabIndex        =   89
+      TabIndex        =   94
       Top             =   3840
       Width           =   1215
    End
@@ -1132,7 +1291,7 @@ Begin VB.Form FrmProposta
       BackColor       =   &H0000C000&
       Height          =   255
       Left            =   1200
-      TabIndex        =   88
+      TabIndex        =   93
       Top             =   3840
       Width           =   375
    End
@@ -1151,7 +1310,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   17
       Left            =   7440
-      TabIndex        =   74
+      TabIndex        =   79
       Top             =   1680
       Visible         =   0   'False
       Width           =   855
@@ -1171,7 +1330,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   16
       Left            =   7560
-      TabIndex        =   73
+      TabIndex        =   78
       Top             =   1800
       Visible         =   0   'False
       Width           =   855
@@ -1181,7 +1340,7 @@ Begin VB.Form FrmProposta
       Caption         =   "Ordem Compra"
       Height          =   255
       Left            =   8160
-      TabIndex        =   72
+      TabIndex        =   77
       Top             =   1200
       Visible         =   0   'False
       Width           =   1455
@@ -1191,7 +1350,7 @@ Begin VB.Form FrmProposta
       Caption         =   "Cond. de Pag. / Prazo"
       Height          =   255
       Left            =   6000
-      TabIndex        =   71
+      TabIndex        =   76
       Top             =   1080
       Visible         =   0   'False
       Width           =   2055
@@ -1212,7 +1371,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00FF0000&
       Height          =   360
       Left            =   120
-      TabIndex        =   69
+      TabIndex        =   74
       Top             =   120
       Width           =   2610
    End
@@ -1222,7 +1381,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   0
       Left            =   120
-      TabIndex        =   68
+      TabIndex        =   73
       Top             =   2040
       Width           =   1455
    End
@@ -1232,7 +1391,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00FF0000&
       Height          =   255
       Left            =   4920
-      TabIndex        =   67
+      TabIndex        =   72
       Top             =   3840
       Width           =   4695
    End
@@ -1242,7 +1401,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00FF0000&
       Height          =   255
       Left            =   7920
-      TabIndex        =   66
+      TabIndex        =   71
       Top             =   3480
       Width           =   2055
    End
@@ -1262,9 +1421,9 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H00FF0000&
       Height          =   195
       Index           =   15
-      Left            =   120
-      TabIndex        =   65
-      Top             =   8040
+      Left            =   240
+      TabIndex        =   70
+      Top             =   9000
       Width           =   690
    End
    Begin VB.Label Label8 
@@ -1272,7 +1431,7 @@ Begin VB.Form FrmProposta
       Caption         =   "STATUS"
       Height          =   255
       Left            =   7200
-      TabIndex        =   64
+      TabIndex        =   69
       Top             =   1560
       Width           =   735
    End
@@ -1281,7 +1440,7 @@ Begin VB.Form FrmProposta
       Caption         =   "ICMS"
       Height          =   255
       Left            =   5040
-      TabIndex        =   62
+      TabIndex        =   67
       Top             =   1560
       Width           =   735
    End
@@ -1300,7 +1459,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   14
       Left            =   7920
-      TabIndex        =   56
+      TabIndex        =   61
       Top             =   600
       Width           =   615
    End
@@ -1311,9 +1470,9 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Index           =   13
-      Left            =   3360
-      TabIndex        =   50
-      Top             =   8040
+      Left            =   3480
+      TabIndex        =   55
+      Top             =   9000
       Width           =   915
    End
    Begin VB.Label Label3 
@@ -1323,9 +1482,9 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Index           =   12
-      Left            =   1680
-      TabIndex        =   49
-      Top             =   8040
+      Left            =   1800
+      TabIndex        =   54
+      Top             =   9000
       Width           =   1260
    End
    Begin VB.Label Label3 
@@ -1344,9 +1503,9 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Index           =   11
-      Left            =   5520
-      TabIndex        =   46
-      Top             =   7320
+      Left            =   5400
+      TabIndex        =   51
+      Top             =   8400
       Width           =   330
    End
    Begin VB.Label Label3 
@@ -1364,9 +1523,10 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   255
       Index           =   10
-      Left            =   120
-      TabIndex        =   44
-      Top             =   7320
+      Left            =   8160
+      TabIndex        =   50
+      Top             =   4920
+      Visible         =   0   'False
       Width           =   1215
    End
    Begin VB.Label Label3 
@@ -1385,9 +1545,10 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Index           =   9
-      Left            =   1560
-      TabIndex        =   43
-      Top             =   7320
+      Left            =   9600
+      TabIndex        =   49
+      Top             =   4920
+      Visible         =   0   'False
       Width           =   795
    End
    Begin VB.Label Label3 
@@ -1405,7 +1566,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   1
       Left            =   120
-      TabIndex        =   37
+      TabIndex        =   43
       Top             =   1560
       Width           =   1095
    End
@@ -1425,7 +1586,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Left            =   120
-      TabIndex        =   36
+      TabIndex        =   42
       Top             =   3480
       Width           =   7605
    End
@@ -1445,7 +1606,7 @@ Begin VB.Form FrmProposta
       ForeColor       =   &H000000FF&
       Height          =   195
       Left            =   1200
-      TabIndex        =   35
+      TabIndex        =   41
       Top             =   1320
       Width           =   2850
    End
@@ -1464,7 +1625,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   8
       Left            =   5040
-      TabIndex        =   34
+      TabIndex        =   40
       Top             =   600
       Width           =   855
    End
@@ -1562,7 +1723,7 @@ Begin VB.Form FrmProposta
       Height          =   255
       Index           =   5
       Left            =   8640
-      TabIndex        =   53
+      TabIndex        =   58
       Top             =   2880
       Width           =   735
    End
@@ -1733,7 +1894,7 @@ If LcCalculado Then Exit Function
 LcCalculado = True
 '=== Converte os Valores
 If Len(Trim(Txt(3).Text)) = 0 Then Exit Function
-Valor(1).Text = 0
+valor(1).Text = 0
 If Len(Trim(Txt(3).Text)) > 0 Then
    LcQuant = CDbl(Txt(3).Text)
 Else
@@ -1746,10 +1907,10 @@ Else
 End If
 'MsgBox Txt(3).Text
 
-LcUnit = CDbl(Valor(0).Text)
+LcUnit = CDbl(valor(0).Text)
 
 LcTotal = CDbl(LcQuant) * CDbl(LcUnit)
-Valor(1).Text = LcTotal
+valor(1).Text = LcTotal
 
 LcCalculado = False
 End Function
@@ -1892,7 +2053,7 @@ LcMat(LcTam).santamaria = Dados.santamaria ' CLng(santamaria.Text)
 LcMat(LcTam).santamaria1 = Dados.santamaria1 ' CLng(santamaria1.Text)
 LcMat(LcTam).usuario = ""
 'If (CInt(tipoblP.Text) > 0) Or (CInt(tipoBlQ.Text) > 0) Then
-   LcMat(LcTam).Bloqueado = Dados.Bloqueado
+   LcMat(LcTam).bloqueado = Dados.bloqueado
 'Else
  '  LcMat(LcTam).bloqueado = False
 'End If
@@ -1901,7 +2062,7 @@ LcMat(LcTam).usuario = ""
    LcMat(LcTam).jaEsteveBloqueado = Dados.jaEsteveBloqueado
 'End If
 LcMat(LcTam).tipoliberacao = Dados.tipoliberacao 'CInt(tipoBlQ.Text) + CInt(tipoblP.Text)
-Command9.Enabled = LcMat(LcTam).Bloqueado
+Command9.Enabled = LcMat(LcTam).bloqueado
 
 LcTam = LcTam + 1
 EscreveGrid
@@ -1924,9 +2085,9 @@ If Len(Trim(Txt(3).Text)) = 0 Or (Txt(3).Text = "0") Then
    Txt(3).SetFocus
    Exit Function
 End If
-If Len(Trim(Valor(0).Text)) = 0 Or Valor(0).Text = "0" Then
+If Len(Trim(valor(0).Text)) = 0 Or valor(0).Text = "0" Then
    MsgBox "Necessário Informar o Valor Unitario do Item.", 48, "Aviso"
-   Valor(0).SetFocus
+   valor(0).SetFocus
    Exit Function
 End If
 
@@ -1940,8 +2101,8 @@ LcMat(LcTam).produto = Txt(2).Text
 LcMat(LcTam).Qut = CCur(Txt(3).Text)
 LcMat(LcTam).Und = Unidade.Text
 LcMat(LcTam).Com = Txt(4).Text
-LcMat(LcTam).VUnit = CCur(Valor(0).Text)
-LcMat(LcTam).Vtotal = CCur(Valor(0).Text) * CCur(Txt(3).Text)
+LcMat(LcTam).VUnit = CCur(valor(0).Text)
+LcMat(LcTam).Vtotal = CCur(valor(0).Text) * CCur(Txt(3).Text)
 LcMat(LcTam).Venda1 = CCur(Custo.Text)
 LcMat(LcTam).cst = cst.Text
 LcMat(LcTam).icms = icms.Text
@@ -1951,16 +2112,16 @@ LcMat(LcTam).santamaria = CLng(santamaria.Text)
 LcMat(LcTam).santamaria1 = CLng(santamaria1.Text)
 LcMat(LcTam).usuario = ""
 If (CInt(tipoblP.Text) > 0) Or (CInt(tipoBlQ.Text) > 0) Then
-   LcMat(LcTam).Bloqueado = True
+   LcMat(LcTam).bloqueado = True
 Else
-   LcMat(LcTam).Bloqueado = False
+   LcMat(LcTam).bloqueado = False
 End If
 
 If Not LcMat(LcTam).jaEsteveBloqueado Then
-   LcMat(LcTam).jaEsteveBloqueado = LcMat(LcTam).Bloqueado
+   LcMat(LcTam).jaEsteveBloqueado = LcMat(LcTam).bloqueado
 End If
 LcMat(LcTam).tipoliberacao = CInt(tipoBlQ.Text) + CInt(tipoblP.Text)
-Command9.Enabled = LcMat(LcTam).Bloqueado
+Command9.Enabled = LcMat(LcTam).bloqueado
 
 LcTam = LcTam + 1
 EscreveGrid
@@ -1969,7 +2130,7 @@ For a = 1 To 6
    If a <> 5 Then
       Txt(a).Text = ""
    End If
-   Valor(a).Text = ""
+   valor(a).Text = ""
 Next
 '===> seta  a Cor da Celula
 
@@ -1978,8 +2139,8 @@ california.Text = ""
 santamaria.Text = ""
 santamaria1.Text = ""
 Txt(3).Text = " "
-Valor(0).Text = " "
-Valor(0).Text = " "
+valor(0).Text = " "
+valor(0).Text = " "
 Custo.Text = "0"
 icms.Text = "0"
 cst.Text = "0"
@@ -2000,7 +2161,7 @@ ReDim LcMat(0)
 Item.Rows = 1
 For a = 0 To 15
    Txt(a).Text = ""
-   Valor(a).Text = ""
+   valor(a).Text = ""
 Next
 Txt(17).Text = ""
 Txt(16).Text = ""
@@ -2015,7 +2176,7 @@ CmdExcluir.Enabled = False
 almox.Text = ""
 faturado = 0
 Liberado = 0
-Bloqueado.Text = ""
+bloqueado.Text = ""
 JaBloqueado.Text = ""
 MaquinaLiberacao.Text = ""
 HoraLiberacao.Text = ""
@@ -2057,7 +2218,7 @@ For a = 0 To LcTam - 1
        Item.TextMatrix(b, 6) = Format(LcMat(a).VUnit, "Currency")
        Item.TextMatrix(b, 7) = Format(LcMat(a).Vtotal, "Currency")
        Item.TextMatrix(b, 8) = LcMat(a).icms
-       Item.TextMatrix(b, 10) = LcMat(a).Bloqueado
+       Item.TextMatrix(b, 10) = LcMat(a).bloqueado
        Item.TextMatrix(b, 11) = LcMat(a).jaEsteveBloqueado
        Item.TextMatrix(b, 12) = LcMat(a).tipoliberacao
        Item.TextMatrix(b, 13) = LcMat(a).MaquinaLiberacao
@@ -2075,13 +2236,13 @@ For a = 0 To LcTam - 1
             BloqueioValor = ConferePrecoGrid(LcMat(a).CodPro, CDbl(LcMat(a).VUnit), CDbl(LcMat(a).Com))
 
             If BloqueioQuant > 0 Or BloqueioValor > 0 Then
-                LcMat(a).Bloqueado = True
+                LcMat(a).bloqueado = True
                 LcMat(a).tipoliberacao = BloqueioQuant + BloqueioValor
             Else
-                LcMat(a).Bloqueado = False
+                LcMat(a).bloqueado = False
             End If
        End If
-       If LcMat(a).Bloqueado Then
+       If LcMat(a).bloqueado Then
           Select Case LcMat(a).tipoliberacao
               Case Is = 1
                   Cor = &HC0C000
@@ -2098,18 +2259,18 @@ For a = 0 To LcTam - 1
             
        End If
        If Not LcBloqueio Then
-          If LcMat(a).Bloqueado Then LcBloqueio = True
+          If LcMat(a).bloqueado Then LcBloqueio = True
        End If
        b = b + 1
     End If
 Next
 If LcBloqueio Then
    Pendente.Value = 1
-   Bloqueado.Text = True
+   bloqueado.Text = True
    JaBloqueado.Text = True
 Else
     Pendente.Value = 0
-   Bloqueado.Text = False
+   bloqueado.Text = False
    JaBloqueado.Text = False
 End If
 CalculaIcms
@@ -2233,7 +2394,7 @@ End Function
 Function calculaunitario()
 On Error Resume Next
 
-Valor(0).Text = CDbl(Txt(4).Text) * PrecoVendaNormal
+valor(0).Text = CDbl(Txt(4).Text) * PrecoVendaNormal
 
 minimo.Text = CLng(Txt(4).Text) * CCur(AcertaNumero(CStr(PrecoMimimodeVendaAlterado), GlDecimais))
 End Function
@@ -2266,7 +2427,7 @@ Select Case LcTipo
             Txt(2).Text = RsProduto!Nome
             Unidade.Text = LcUnidade
             Txt(4).Text = RsProduto!QtdMedida
-            Valor(0).Text = RsProduto!Preco
+            valor(0).Text = RsProduto!Preco
             cst.Text = RsProduto!cst
             LcPrecoVelho = RsProduto!Preco
             If Not IsNull(RsProduto!Preco) Then PrecoVendaNormal = RsProduto!Preco / RsProduto!QtdMedida Else PrecoVendaNormal = 0
@@ -2333,18 +2494,18 @@ Select Case LcTipo
                 Do Until Rs.EOF
                     If Rs!CodProduto = Txt(1).Text Then
                         LcAchou = 1
-                        Valor(0).Text = AcertaNumero(CDbl(Rs!Valor), 2)
-                        PrecoVendaNormal = CDbl(Rs!Valor)
+                        valor(0).Text = AcertaNumero(CDbl(Rs!valor), 2)
+                        PrecoVendaNormal = CDbl(Rs!valor)
                     End If
                     Rs.MoveNext
                 Loop
                 Rs.Close
                 Set Rs = Nothing
                 If LcAchou = 0 Then
-                    Valor(0).Text = RsProduto!Preco
+                    valor(0).Text = RsProduto!Preco
                 End If
             Else
-                Valor(0).Text = RsProduto!Preco
+                valor(0).Text = RsProduto!Preco
             End If
             cst.Text = RsProduto!cst
             LcPrecoVelho = RsProduto!Preco
@@ -2585,12 +2746,12 @@ Select Case LcTipo
          LcCriterioCli = "CODIGO='" & Txt(8).Text & "'"
          rsCliente.FindFirst LcCriterioCli
          If Not rsCliente.NoMatch Then
-            Txt(9).Text = rsCliente!RazaoSoc
-            LcDesCidade = rsCliente!RazaoSoc
-            If rsCliente!Comodato Then
-               Comodato.Value = 1
+            Txt(9).Text = rsCliente!razaosoc
+            LcDesCidade = rsCliente!razaosoc
+            If rsCliente!comodato Then
+               comodato.Value = 1
            Else
-               Comodato.Value = 0
+               comodato.Value = 0
            End If
             Txt(7).Text = rsCliente!TelemarketingAtende
             BuscaVendendor (2)
@@ -2616,14 +2777,14 @@ Select Case LcTipo
         LcCriterioCli = "CODIGO='" & lcchave & "'"
         rsCliente.FindFirst LcCriterioCli
         If Not rsCliente.NoMatch Then
-            Txt(9).Text = rsCliente!RazaoSoc & ""
+            Txt(9).Text = rsCliente!razaosoc & ""
             Txt(8).Text = rsCliente!codigo & ""
-            LcDesCidade = rsCliente!RazaoSoc & ""
+            LcDesCidade = rsCliente!razaosoc & ""
             Txt(7).Text = rsCliente!TelemarketingAtende & ""
-            If rsCliente!Comodato Then
-               Comodato.Value = 1
+            If rsCliente!comodato Then
+               comodato.Value = 1
            Else
-               Comodato.Value = 0
+               comodato.Value = 0
            End If
             BuscaVendendor (2)
             If Not IsEmpty(rsCliente!LimiteCredito) And (Not IsNull(rsCliente!LimiteCredito)) Then LcCredito = rsCliente!LimiteCredito Else LcCredito = 0
@@ -2644,7 +2805,7 @@ Select Case LcTipo
         End If
   
 End Select
-HabilitaClienteBloqueado Not rsCliente!Bloqueado
+HabilitaClienteBloqueado Not rsCliente!bloqueado
 
 'AbreOBS
 LcPesquisaCli = True
@@ -2677,8 +2838,8 @@ Txt(2).Enabled = Bloqueia
 Unidade.Enabled = Bloqueia
 Txt(4).Enabled = Bloqueia
 Txt(3).Enabled = Bloqueia
-Valor(0).Enabled = Bloqueia
-Valor(1).Enabled = Bloqueia
+valor(0).Enabled = Bloqueia
+valor(1).Enabled = Bloqueia
 
 LabelBloqueado.Visible = Not Bloqueia
 
@@ -2860,6 +3021,14 @@ If InStr(UCase(GLBase), "LIDIS") <> 0 Then
     With RelLidis
 'Exit Sub
         For a = 1 To .FormulaFields.Count
+            If UCase(.FormulaFields(a).FormulaFieldName) = UCase("VendedorNome") Then
+               If Len(VendedorImprimir.Text) = 0 Then
+                   .FormulaFields(a).Text = "totext('" & Txt(7).Text & "')"
+               Else
+                    .FormulaFields(a).Text = "totext('" & VendedorImprimir.Text & "')"
+               End If
+              
+            End If
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("Fone") Then .FormulaFields(a).Text = "totext('" & LcFone & "')"
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("EMPRESA") Then .FormulaFields(a).Text = "totext('" & LcEmpresa & "')"
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("ENDERECO") Then .FormulaFields(a).Text = "totext('" & LcEndereco & "')"
@@ -2877,6 +3046,14 @@ Else
     With Rel
 'Exit Sub
         For a = 1 To .FormulaFields.Count
+            If UCase(.FormulaFields(a).FormulaFieldName) = UCase("VendedorNome") Then
+               If Len(VendedorImprimir.Text) = 0 Then
+                   .FormulaFields(a).Text = "totext('" & Txt(7).Text & "')"
+               Else
+                    .FormulaFields(a).Text = "totext('" & VendedorImprimir.Text & "')"
+               End If
+              
+            End If
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("Fone") Then .FormulaFields(a).Text = "totext('" & LcFone & "')"
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("EMPRESA") Then .FormulaFields(a).Text = "totext('" & LcEmpresa & "')"
             If UCase(.FormulaFields(a).FormulaFieldName) = UCase("ENDERECO") Then .FormulaFields(a).Text = "totext('" & LcEndereco & "')"
@@ -3252,7 +3429,7 @@ End If
 
 For a = 0 To LcTam - 1
     LcMat(a).DataLiberacao = Date
-    LcMat(a).Bloqueado = False
+    LcMat(a).bloqueado = False
     LcMat(a).HoraLiberacao = Time
     LcMat(a).MaquinaLiberacao = GlNomeMaquina
     LcMat(a).usuario = GlUsuario
@@ -3274,7 +3451,7 @@ MaquinaLiberacao.Text = GlNomeMaquina
 
 usuario.Text = GlUsuario
 Pendente.Value = 0
-Bloqueado.Text = "False"
+bloqueado.Text = "False"
 Command9.Enabled = False
 
 Saida:
@@ -3347,8 +3524,8 @@ If RsOrc.EOF Then
    Txt(10).SetFocus
    Exit Function
 End If
-Txt(0).Text = RsOrc!NumNf
-Txt(12).Text = Format(RsOrc!DTEMIS, "dd/mm/yy")
+Txt(0).Text = RsOrc!numnf
+Txt(12).Text = Format(RsOrc!DtEmis, "dd/mm/yy")
 Txt(6).Text = RsOrc!Status
 Txt(17).Text = RsOrc!Desconto
 Select Case RsOrc("NATUREZA")
@@ -3414,22 +3591,22 @@ End If
 
 rsCliente.FindFirst LcCriterio
 If Not rsCliente.NoMatch Then
-   Txt(9).Text = rsCliente!RazaoSoc
+   Txt(9).Text = rsCliente!razaosoc
    Txt(8).Text = rsCliente!codigo
 End If
-Obs.Text = RsOrc!Obs
+obs.Text = RsOrc!obs
 Condicoes.Text = RsOrc!FormaPag
-Ordem.Text = RsOrc!OrdemCompra
+Ordem.Text = RsOrc!ordemcompra
 Validade.Text = RsOrc!Validade
 Txt(15).Text = RsOrc!ValorProduto
 Txt(16).Text = RsOrc!ValorNota
 Txt(5).Text = RsOrc!icms & ""
 Txt(17).Text = RsOrc!Desconto & ""
-Txt(14).Text = RsOrc!Obs & ""
-If RsOrc!Bloqueado Then
-   Bloqueado.Text = True
+Txt(14).Text = RsOrc!obs & ""
+If RsOrc!bloqueado Then
+   bloqueado.Text = True
 Else
-   Bloqueado.Text = False
+   bloqueado.Text = False
 End If
 If RsOrc!jaEsteveBloqueado Then
    JaBloqueado.Text = True
@@ -3444,6 +3621,13 @@ If RsOrc!Pendente Then
 Else
    Pendente.Value = 0
 End If
+CondPag.Text = RsOrc("CondPag") & ""
+PrazoEntrega.Text = RsOrc("Prazo") & ""
+ValidadeCotacao.Text = RsOrc("Validade") & ""
+VendedorImprimir.Text = RsOrc("VendedorImprimir") & ""
+InformacoesComplementares.Text = RsOrc("InfComplementar") & ""
+
+
 Load DadosTransp
 DadosTransp.Txt(0).Text = RsOrc("TRANSP") & ""
 DadosTransp.Tipo.Text = RsOrc("TIPOTRANS") & ""
@@ -3519,7 +3703,7 @@ Do Until RsItem.EOF
       LcMat(LcTam).produto = RsItem("descricao") & ""
       LcMat(LcTam).Vtotal = LcMat(LcTam).Qut * LcMat(LcTam).VUnit
       
-      LcMat(LcTam).Bloqueado = RsItem("Bloqueado")
+      LcMat(LcTam).bloqueado = RsItem("Bloqueado")
       LcMat(LcTam).tipoliberacao = RsItem("TipoLiberacao")
       LcMat(LcTam).jaEsteveBloqueado = RsItem("jaEsteveBloqueado")
       LcMat(LcTam).MaquinaLiberacao = RsItem("MaquinaLiberacao") & ""
@@ -4035,12 +4219,12 @@ If Not Rs.EOF Then
 Else
   LcPRecoAntigo = 0
 End If
-If Len(Trim(Valor(0).Text)) = 0 Then
-   Valor(0).Text = 0
+If Len(Trim(valor(0).Text)) = 0 Then
+   valor(0).Text = 0
 End If
 If Len(Txt(4).Text) = 0 Then Txt(4).Text = 1
 If Txt(4).Text = "0" Then Txt(4).Text = 1
-LcPreconovo = CCur(Valor(0).Text) / CDbl(Txt(4).Text)
+LcPreconovo = CCur(valor(0).Text) / CDbl(Txt(4).Text)
 GlEscolha = True
 
 If LcPreconovo < LcPRecoAntigo Then
@@ -4256,7 +4440,7 @@ LcDesconto = Txt(17).Text
 If LcInclusao Then
         LcSq = "INSERT INTO proposta (numnf,dtemis,natureza,status,cliente,transp,tipotrans,placatrans,"
         LcSq = LcSq & "uftrans,CGCCPFTRAN,endtrans,munictrans,ufmunic,INSCEST,obs02,obs03,obs04,valorproduto,"
-        LcSq = LcSq & "valornota,icms,formapag,ordemcompra,validade,previsao,liberado,dias1,dias2,dias3"
+        LcSq = LcSq & "valornota,icms,formapag,ordemcompra,previsao,liberado,dias1,dias2,dias3"
         If IsDate(DadosTransp.Vencimento(0).Text) Then
            LcSq = LcSq & ",vencimento1"
         End If
@@ -4272,14 +4456,14 @@ If LcInclusao Then
            LcSq = LcSq & ",dataliberacao"
         End If
         LcSq = LcSq & ",jaEsteveBloqueado,MaquinaLiberacao,HoraLiberacao,pendente,Usuario,EnderecoEntrega,Oc"
-        LcSq = LcSq & ",Maquina, obs)values('"
+        LcSq = LcSq & ",Maquina, obs,CondPag,prazo,Validade,VendedorImprimir,InfComplementar)values('"
         LcSq = LcSq & Txt(0).Text & "','" & Format(Txt(12).Text, "yyyy-mm-dd") & "','" & LcNatureza & "','EMITIDA','"
         LcSq = LcSq & Txt(8).Text & "','" & DadosTransp.Txt(0).Text & "','" & Mid(DadosTransp.Tipo.Text, 1, 1) & "','"
         LcSq = LcSq & DadosTransp.Placa.Text & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(1).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(2).Text) & "','"
         LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.Txt(3).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(4).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(5).Text) & "','"
         LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.Txt(6).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(7).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Txt(8).Text) & "','"
         LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.Txt(9).Text) & "'," & Txt(15).Text & "," & Txt(16).Text & ",'" & Txt(5).Text & "','"
-        LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.TipoMonetario.Text) & "','" & Estoque.RetiraCaracter(Ordem.Text) & "','" & Estoque.RetiraCaracter(Validade.Text) & "','"
+        LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.TipoMonetario.Text) & "','" & Estoque.RetiraCaracter(Ordem.Text) & "','"
         LcSq = LcSq & Format(Previsao.Text, "YYYY-MM-DD") & "'," & CInt(LiberaFaturamento.Value) & ",'"
         LcSq = LcSq & Estoque.RetiraCaracter(DadosTransp.Dias(0).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Dias(1).Text) & "','" & Estoque.RetiraCaracter(DadosTransp.Dias(2).Text) & "',"
         
@@ -4293,7 +4477,7 @@ If LcInclusao Then
            LcSq = LcSq & "'" & Format(DadosTransp.Vencimento(2).Text, "yyyy-mm-dd") & "',"
         End If
         LcSq = LcSq & "'" & Right("00000" & Txt(10).Text, 5) & "'," & LcDesconto & ","
-        LcSq = LcSq & Bloqueado.Text & ","
+        LcSq = LcSq & bloqueado.Text & ","
         If IsDate(DataLiberacao.Text) Then
             LcSq = LcSq & "'" & Format(DataLiberacao.Text, "yyyy-mm-dd") & "',"
         End If
@@ -4301,7 +4485,12 @@ If LcInclusao Then
         LcSq = LcSq & IIf(GlNaoVerificaEstoque, 0, Pendente.Value) & ",'" & usuario.Text & "'"
         LcSq = LcSq & ",'" & DadosTransp.Txt(10).Text & "','" & DadosTransp.Txt(11).Text & "'"
         LcSq = LcSq & ",'" & Nome_Maquina & "'"
-        LcSq = LcSq & ",'" & Replace(Txt(14).Text, "'", "''") & "')"
+        LcSq = LcSq & ",'" & Replace(Txt(14).Text, "'", "''") & "'"
+        LcSq = LcSq & ",'" & Replace(CondPag.Text, "'", "''") & "'"
+        LcSq = LcSq & ",'" & Replace(PrazoEntrega.Text, "'", "''") & "'"
+        LcSq = LcSq & ",'" & Replace(ValidadeCotacao.Text, "'", "''") & "'"
+        LcSq = LcSq & ",'" & Replace(VendedorImprimir.Text, "'", "''") & "'"
+        LcSq = LcSq & ",'" & Replace(InformacoesComplementares.Text, "'", "''") & "')"
 
 Else
         LcSq = "Update proposta Set "
@@ -4325,7 +4514,6 @@ Else
         LcSq = LcSq & "icms='" & Txt(5).Text & "',"
         LcSq = LcSq & "formapag='" & Estoque.RetiraCaracter(DadosTransp.TipoMonetario.Text) & "',"
         LcSq = LcSq & "ordemcompra='" & Estoque.RetiraCaracter(Ordem.Text) & "',"
-        LcSq = LcSq & "validade='" & Estoque.RetiraCaracter(Validade.Text) & "',"
         LcSq = LcSq & "previsao='" & Format(Previsao.Text, "YYYY-MM-DD") & "',"
         LcSq = LcSq & "liberado=" & CInt(LiberaFaturamento.Value) & ","
         LcSq = LcSq & "dias1='" & Estoque.RetiraCaracter(DadosTransp.Dias(0).Text) & "',"
@@ -4348,7 +4536,7 @@ Else
         End If
         LcSq = LcSq & "Vendedor='" & Right("00000" & Txt(10).Text, 5) & "',"
         LcSq = LcSq & "Desconto=" & LcDesconto & ","
-        LcSq = LcSq & "bloqueado=" & Bloqueado.Text & ","
+        LcSq = LcSq & "bloqueado=" & bloqueado.Text & ","
         If IsDate(DataLiberacao.Text) Then
             LcSq = LcSq & "dataliberacao='" & Format(DataLiberacao.Text, "yyyy-mm-dd") & "',"
         End If
@@ -4360,6 +4548,11 @@ Else
         LcSq = LcSq & "EnderecoEntrega='" & DadosTransp.Txt(10).Text & "',"
         LcSq = LcSq & "Oc='" & DadosTransp.Txt(11).Text & "',"
         LcSq = LcSq & "obs='" & Replace(Txt(14).Text, "'", "''") & "',"
+        LcSq = LcSq & "CondPag='" & Replace(CondPag.Text, "'", "''") & "',"
+        LcSq = LcSq & "Prazo='" & Replace(PrazoEntrega.Text, "'", "''") & "',"
+        LcSq = LcSq & "Validade='" & Replace(ValidadeCotacao.Text, "'", "''") & "',"
+        LcSq = LcSq & "VendedorImprimir='" & Replace(VendedorImprimir.Text, "'", "''") & "',"
+        LcSq = LcSq & "InfComplementar='" & Replace(InformacoesComplementares.Text, "'", "''") & "',"
         LcSq = LcSq & "Maquina='" & Nome_Maquina & "'"
         'LcSq = LcSq & " where codigo=" & Txt(0).Text
         LcSq = LcSq & " where NUMNF='" & Txt(0).Text & "'"
@@ -4405,7 +4598,7 @@ For a = 0 To LcTam - 1
         
         LcTipoLi = LcMat(a).tipoliberacao
         If LcMat(a).jaEsteveBloqueado Then LcJaBlo = -1 Else LcJaBlo = 0
-        If LcMat(a).Bloqueado Then LcBlo = -1 Else LcBlo = 0
+        If LcMat(a).bloqueado Then LcBlo = -1 Else LcBlo = 0
          'Call GeraHistorico(LcMat(a).CodPro, LcMat(a).produto, Txt(0).Text, "E", CDate(Txt(12).Text), LcMat(a).santamaria, LcMat(a).santamaria1, CLng(LcMat(a).california), 0, 0, 0)
          LcSq = "INSERT INTO subproposta (numnf,item,codprod,qtde,valunit,unimed,QTDUM,"
          LcSq = LcSq & "descricao,bloqueado,tipoliberacao,jaestevebloqueado,maquinaliberacao,"
@@ -4567,7 +4760,7 @@ Private Sub valor_KeyPress(Index As Integer, KeyAscii As Integer)
 On Error Resume Next
 If KeyAscii = 13 Then Exit Sub
 If LcLimpa Then
-   Valor(Index).Text = ""
+   valor(Index).Text = ""
    LcLimpa = False
 End If
 If KeyAscii = 46 Then KeyAscii = 44
@@ -4579,7 +4772,7 @@ On Error Resume Next
 If Index = 1 Then
    If KeyCode = 38 Then
        LcFechaitem = False
-       Valor(0).SetFocus
+       valor(0).SetFocus
    End If
 End If
 
@@ -4617,7 +4810,7 @@ If Len(Txt(8).Text) = 0 Then Exit Sub
 Set RsReceita = AbreRecordset("Select * from alid015 where cliente='" & Right("00000" & Txt(8).Text, 5) & "' and DTVENC<#" & Format(Date, "mm/dd/yy") & "# and VALPAGO=0;")
 Dim LcValorAtraso As Currency
 Do Until RsReceita.EOF
-   LcValorAtraso = LcValorAtraso + RsReceita!Valor
+   LcValorAtraso = LcValorAtraso + RsReceita!valor
    RsReceita.MoveNext
 Loop
 If LcValorAtraso > 0 Then
