@@ -1815,7 +1815,7 @@ Private Type TipoUnid
       codigo As String
       Descricao As String
       Simbolo As String
-      quantidade As Long
+      Quantidade As Long
 End Type
 Private LcItem As Long, LcTam, LcQUn, LcQuantiImpressao, LcQuantiImpressaoBoleto As Long
 Private FnunNota, FnunBoleto
@@ -1969,7 +1969,7 @@ Item.TextMatrix(0, 15) = "HoraLib"
 LcTamanhoGrid = 1
 End Function
 
-Public Function MondaGridAutomatico(LcCodigo As Long, quantidade As Long, ValorUnirario As Currency, Com As Long, Lc_Unidade As String, LcItem As Long)
+Public Function MondaGridAutomatico(LcCodigo As Long, Quantidade As Long, ValorUnirario As Currency, Com As Long, Lc_Unidade As String, LcItem As Long)
 Dim Dados As DadosEntrada
 'MsgBox LcTipo
 'On Error GoTo errBuscaFor
@@ -2025,7 +2025,7 @@ ReDim Preserve LcMat(LcTam)
 LcMat(LcTam).Item = Right("00" & LcItem + 1, 2)
 LcMat(LcTam).CodPro = Dados.CodPro
 LcMat(LcTam).produto = Dados.produto
-LcMat(LcTam).Qut = quantidade
+LcMat(LcTam).Qut = Quantidade
 If Len(Lc_Unidade) > 0 Then
    LcMat(LcTam).Und = Lc_Unidade
 Else
@@ -2186,6 +2186,11 @@ Txt(6).Text = "EM LANCAMENTO"
 Unload DadosTransp
 Txt(0).Locked = True
 Lucratividade.Text = ""
+VendedorImprimir.Text = ""
+CondPag.Text = ""
+PrazoEntrega.Text = "Imediato"
+ValidadeCotacao.Text = "3 DIAS"
+InformacoesComplementares.Text = ""
 
 Txt(12).SetFocus
 End Function
@@ -2378,7 +2383,7 @@ Do Until RsUnidade.EOF
    MtUnidade(LcQUn).codigo = RsUnidade!cod
    MtUnidade(LcQUn).Descricao = RsUnidade!Nome
    MtUnidade(LcQUn).Simbolo = RsUnidade!Simbolo
-   MtUnidade(LcQUn).quantidade = RsUnidade!quantidade
+   MtUnidade(LcQUn).Quantidade = RsUnidade!Quantidade
    Unidade.AddItem RsUnidade!Simbolo
    RsUnidade.MoveNext
    LcQUn = LcQUn + 1
@@ -3563,8 +3568,8 @@ If Len(RsOrc!CFOP) > 0 Then
 Else
    CFOP.Text = "512"
 End If
-Txt(10).Text = RsOrc!vendedor & ""
-LcCriterio = "Codigo='" & RsOrc!vendedor & "'"
+Txt(10).Text = RsOrc!Vendedor & ""
+LcCriterio = "Codigo='" & RsOrc!Vendedor & "'"
 RsVendedor.FindFirst LcCriterio
 If Not RsVendedor.NoMatch Then
    Txt(7).Text = RsVendedor!Nome
@@ -4650,18 +4655,18 @@ For a = 0 To LcTam - 1
                            LcSq = LcSq & ",'" & Estoque.NF & "','" & Format(Txt(12).Text, "yyyy-mm-dd") & "','S','" & LcMat(a).Und & "','" & Estoque.RetiraCaracter(Txt(9).Text) & "','" & LcCodLancamento & "')"
                         ' MsgBox LcSq
                          
-                           total = ExecutaSql(LcSq)
+                           Total = ExecutaSql(LcSq)
                            If Len(LcMat(a).NumeroVale) > 0 Then
                               LcSql = "Update HistoricoProduto Set Tipo='S',CodUnid='" & LcCodLancamento & "',nf='" & Estoque.NF & "' where Tipo='V' and nf='" & LcMat(a).NumeroVale & "' And Produto='" & LcMat(a).CodPro & "'"
                               'MsgBox LcSql
-                              total = ExecutaSql(LcSql)
+                              Total = ExecutaSql(LcSql)
                            End If
                         Else
                            '===> Temos o Vale, então vamos mudar o tipo no historico.
                            '===> Alteramos o historico para representar a nota no historico
                            LcSql = "Update HistoricoProduto Set tipo='S',CodUnid='" & LcCodLancamento & "',nf='" & Txt(0).Text & "' where Tipo='V' and nf='" & LcMat(a).NumeroVale & "' And Produto='" & LcMat(a).CodPro & "'"
                            'MsgBox LcSql
-                           total = ExecutaSql(LcSql)
+                           Total = ExecutaSql(LcSql)
                         
                         End If
                    End If
@@ -4692,8 +4697,8 @@ On Error Resume Next
 Dim a As Integer
 For a = 0 To LcQUn
     If MtUnidade(a).Simbolo = Unidade.Text Then
-       If MtUnidade(a).quantidade <> 0 Then
-          Txt(4).Text = MtUnidade(a).quantidade
+       If MtUnidade(a).Quantidade <> 0 Then
+          Txt(4).Text = MtUnidade(a).Quantidade
        End If
        Exit For
     End If
@@ -4819,7 +4824,7 @@ If LcValorAtraso > 0 Then
 End If
 If Len(LcMsg) > 0 Then
    Load FrmMostraMsgAtrado
-   FrmMostraMsgAtrado.Msg.Caption = LcMsg
+   FrmMostraMsgAtrado.msg.Caption = LcMsg
    FrmMostraMsgAtrado.Show (1)
 End If
 End Sub
@@ -4828,7 +4833,7 @@ On Error GoTo errorVali
 Dim Rs As Recordset
 Dim db As Database
 Dim Estado As String
-Dim CNPJ As String
+Dim Cnpj As String
 Dim Inscricao As String
 
 Set db = OpenDatabase(GLBase)
@@ -4868,23 +4873,23 @@ Else
         End If
      End If
      '==> Valida o cnpj
-     CNPJ = Rs!CGC & ""
-     CNPJ = Replace(CNPJ, ",", "")
-     CNPJ = Replace(CNPJ, ".", "")
-     CNPJ = Replace(CNPJ, "-", "")
-     CNPJ = Replace(CNPJ, "/", "")
-     CNPJ = Replace(CNPJ, "\", "")
-     CNPJ = Replace(CNPJ, " ", "")
-     CNPJ = Trim(CNPJ)
-     If Len(CNPJ) = 0 Then
-        CNPJ = Rs!cpf & ""
-        CNPJ = Replace(CNPJ, ",", "")
-        CNPJ = Replace(CNPJ, ".", "")
-        CNPJ = Replace(CNPJ, "-", "")
-        CNPJ = Replace(CNPJ, "/", "")
-        CNPJ = Replace(CNPJ, "\", "")
-        CNPJ = Replace(CNPJ, " ", "")
-        CNPJ = Trim(CNPJ)
+     Cnpj = Rs!CGC & ""
+     Cnpj = Replace(Cnpj, ",", "")
+     Cnpj = Replace(Cnpj, ".", "")
+     Cnpj = Replace(Cnpj, "-", "")
+     Cnpj = Replace(Cnpj, "/", "")
+     Cnpj = Replace(Cnpj, "\", "")
+     Cnpj = Replace(Cnpj, " ", "")
+     Cnpj = Trim(Cnpj)
+     If Len(Cnpj) = 0 Then
+        Cnpj = Rs!cpf & ""
+        Cnpj = Replace(Cnpj, ",", "")
+        Cnpj = Replace(Cnpj, ".", "")
+        Cnpj = Replace(Cnpj, "-", "")
+        Cnpj = Replace(Cnpj, "/", "")
+        Cnpj = Replace(Cnpj, "\", "")
+        Cnpj = Replace(Cnpj, " ", "")
+        Cnpj = Trim(Cnpj)
      End If
      Inscricao = Rs!INSCEST & ""
      Inscricao = Replace(Inscricao, ",", "")
@@ -4894,19 +4899,19 @@ Else
      Inscricao = Replace(Inscricao, "\", "")
      Inscricao = Replace(Inscricao, " ", "")
      Inscricao = Trim(Inscricao)
-     If Len(CNPJ) = 0 Then
+     If Len(Cnpj) = 0 Then
         MsgBox "O CNPJ / CPF do cliente não foi cadastrado.", 64, "Aviso"
         ValidaEntradaSintegra = False
         GoTo Saida
      End If
-     If Len(CNPJ) > 11 Then
-        If Not Calc_CNPJ(CNPJ) Then
+     If Len(Cnpj) > 11 Then
+        If Not Calc_CNPJ(Cnpj) Then
            MsgBox "O CNPJ do cliente é invalido.", 64, "Aviso"
            ValidaEntradaSintegra = False
            GoTo Saida
         End If
      Else
-        If Not Calc_CPF(CNPJ) Then
+        If Not Calc_CPF(Cnpj) Then
            MsgBox "O CPF do cliente é invalido.", 64, "Aviso"
            ValidaEntradaSintegra = False
            GoTo Saida
